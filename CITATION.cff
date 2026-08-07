@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this hypothesis framework, protocol, code, or figures, please cite this repository."
+title: "The External Maintenance Factor–Reserve–Gating Hypothesis of Hereditary Cerebellar Degeneration"
+type: software
+version: 0.1.0
+date-released: 2026-08-07
+authors:
+  - family-names: Chen
+    given-names: Jieyang
+repository-code: "https://github.com/jieyangxchen/cerebellar-maintenance-reserve-gating-hypothesis"
+url: "https://github.com/jieyangxchen/cerebellar-maintenance-reserve-gating-hypothesis"
+license: CC-BY-NC-4.0
+keywords:
+  - spinocerebellar ataxia
+  - SCA3
+  - SCA6
+  - prospective cohort
+  - early intervention
+  - falsifiable hypothesis
+  - non-monotonic exposure

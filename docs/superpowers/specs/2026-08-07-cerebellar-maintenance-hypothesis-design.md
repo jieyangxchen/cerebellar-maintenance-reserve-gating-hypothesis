@@ -17,15 +17,15 @@ The hierarchy of claims is explicit:
 
 ## Model revision
 
-The submitted model avoids an unconstrained collection of latent variables. Candidate measured exposures form `E(t)`. A preregistered mapping may define a low-dimensional input score `X(t)`, but an unrestricted post-hoc score is prohibited. Genotype and baseline physiology define coupling `R` without using future onset or progression. Dynamic reserve `B(t)` is the only mechanistic state variable. A biomarker factor `L(t)` is a measurement model for observed readouts, not a second free causal substance.
+The submitted model avoids an unconstrained collection of latent variables. Candidate measured exposures form `E(t)`. A preregistered mapping defines a low-dimensional derived score `S(t)=h(E;\theta)`; the biological maintenance input `X(t)` remains hypothetical, and any `X=\phi(S;\psi)` bridge must be frozen rather than inferred from outcomes. Genotype and baseline physiology define coupling `R` without using future onset or progression. Dynamic reserve `B(t)` is the only mechanistic state variable. A biomarker factor `L(t)` is a measurement model for observed readouts, not a second free causal substance.
 
 Three nested models are compared:
 
 - `M0`: genotype, known modifiers, age, ancestry, site, and known exposures.
-- `M1`: `M0` plus reserve/biomarker-state dynamics.
-- `M2`: `M1` plus preregistered non-linear exposure and genotype-by-exposure terms.
+- `M1`: `M0` plus the frozen biomarker measurement state `L(t)`; predictive gain does not identify reserve `B`.
+- `M2`: `M1` plus the preregistered non-linear `S*` and genotype-by-`S*` terms.
 
-The gating extension survives only if `M2` improves calibration and out-of-sample prediction in an external cohort and reproduces the direction and location of the risk region. Residual age at onset plots may be descriptive, but the confirmatory analysis uses one-stage interval-censored survival models rather than treating residuals as error-free outcomes.
+`M2` is named the non-linear environment model. It survives statistically only if it improves calibration and out-of-sample prediction in an external cohort and reproduces the direction and location of the risk region. It cannot establish gating, uptake, leakage, or reserve; those claims require independent activation–uptake–reserve measurements, temporal mediation, and selective perturbation. Residual age at onset plots may be descriptive, but the confirmatory analysis uses one-stage interval-censored survival models rather than treating residuals as error-free outcomes.
 
 ## Figures
 
@@ -33,21 +33,21 @@ Three original, reproducible figures will be generated as SVG, PDF, and 600-dpi 
 
 1. **Causal architecture and evidence tiers.** Genotype, known pathology, measured environment, gate, reserve, biomarker state, multi-cellular network, dysfunction, and degeneration; solid and dashed edges distinguish supported and hypothetical links.
 2. **Non-monotonic gating curve.** An explicitly illustrative parameter set shows low-input idle, intermediate-input activation plus leakage and maximal reserve loss, and high-input rebalancing. The caption states that the curves are predictions, not patient data.
-3. **Prospective test-and-intervene programme.** A longitudinal SCA3/SCA6 cohort feeds a locked external validation and a gated, biomarker-enriched, sham-controlled proof-of-mechanism trial.
+3. **Prospective test-and-intervene programme.** A longitudinal SCA3/SCA6 cohort feeds locked external validation and three gated modules: conditional SCA3 molecular lowering, an early-manifest SCA6 trial, and a not-yet-active circuit phase 0 study.
 
 ## Cohort protocol
 
-The prospective cohort is multicentre, family-aware, four-year, and genotype-stratified. It targets 360 expansion carriers (240 SCA3, 120 SCA6) plus 120 genetically unaffected relatives or demographically matched controls, with approximately equal preataxic and early symptomatic representation where feasible. The primary estimand is the difference in a preregistered longitudinal biomarker-state slope across exposure regions and genotypes. Phenoconversion is important but secondary because expected event counts are too small for a flexible confirmatory non-linear model.
+The prospective cohort is multicentre, family-aware, five-year, genotype-stratified, and event-driven. The planning core contains 500 preataxic SCA3 and 300 preataxic SCA6 carriers plus early-manifest carriers and primarily expansion-negative relatives as controls; recruitment may expand to approximately 750 SCA3 and 450 SCA6 preataxic carriers if the genotype-interaction objective remains confirmatory. The primary outcome is interval-censored phenoconversion, with longitudinal biomarkers supporting temporal-order and latent-state analyses.
 
-Core visits occur at baseline and months 6, 12, 18, 24, 36, and 48. Blood NfL, blinded SARA/f-SARA, digital gait and balance, eye movements, medication and exposure updates occur at each core visit. Harmonized structural MRI and genotype-specific MRS occur annually. Dense remote exposure and wearable sampling reduces recall bias. One candidate exposure family and one non-linear contrast are confirmatory; additional exposome analyses are exploratory and use false-discovery-rate control.
+Core visits occur every six months through month 60. Blood NfL, blinded SARA/f-SARA, digital gait and balance, eye movements, medication, and exposure updates occur at each core visit. Remote gait sampling occurs every three months, structural/diffusion MRI annually, and genotype-specific MRS at baseline, month 24, and month 60. One measured operationalization `E*` is selected from a finite two-candidate shortlist by a registered outcome-blind rubric; its analytic score `S*=h(E*;theta)` and one non-linear contrast are then frozen. Additional exposome analyses are exploratory and use false-discovery-rate control.
 
 ## Early-intervention trial
 
-SCA3 and SCA6 do not share a validated disease-modifying agent. The repository therefore specifies a common master protocol and genotype-specific intervention appendices. The executable first module is a phase Ib/IIa, biomarker-enriched, sham-controlled **functional-downshift proof-of-mechanism** study, activated only after the cohort prospectively validates a reproducible, directionally interpretable hyperactivity phenotype and a human-safe modulation method.
+SCA3 and SCA6 do not share a validated disease-modifying agent, so the repository prohibits a pooled pharmacologic primary efficacy analysis. The SCA3 module is a conditional 104-week, approximately 120-participant mutant-ATXN3-lowering phase 2 study that activates only after SCA3-specific human safety, a recommended phase 2 dose, and CSF target engagement. Week-26 CSF mutant ATXN3 and week-104 pons-volume change are co-primary endpoints.
 
-The target is mechanism engagement, not a registration claim. A pooled primary analysis is allowed only if the treatment-by-genotype interaction passes the prespecified compatibility criterion; genotype-specific estimates are always reported. The primary endpoint is change in a locked network-hyperactivity composite after four weeks. NfL, genotype-specific MRS, digital balance, SARA/f-SARA, patient-reported function, withdrawal reversibility, and safety are secondary or exploratory. A 48-week extension estimates persistence but is not labelled proof of neuroprotection.
+The SCA6 module is an early-manifest, 240-participant, placebo-controlled L-arginine phase 2b study with 72 weeks of treatment and 12 weeks of blinded withdrawal. It caps recruitment at 80 participants in each SARA band, uses numerical staged-expansion gates, and tests a fixed one-third-weighted mean of the week-68/week-72 band-specific SARA contrasts. The withdrawal period has a separate estimand and no continued-active counterfactual. NfL and MRS remain non-surrogate secondary or exploratory endpoints. Enhanced hepatic, renal, metabolic, aspiration, and pneumonia monitoring reflects the prior pilot safety signal.
 
-A scenario target of 96 randomized participants (48 per genotype; 1:1 active/sham) is justified for pooled target engagement around standardized effect `d=0.58` with 80% power before attrition, while acknowledging that each genotype-specific contrast is powered only for a larger effect near `d=0.82`. A definitive progression trial requires new pilot variance estimates and substantially larger genotype-specific samples.
+A circuit-targeted phase 0 module is not executable until a human hyperactivity classifier has test–retest reliability of at least 0.75, prospectively precedes decline, normalizes toward a healthy reference under intervention, and reverses safely during washout. Its first primary endpoint is target engagement and reversibility, not disease modification.
 
 ## Evidence and reproducibility
 
@@ -92,4 +92,3 @@ docs/superpowers/plans/
 - Figures are legible at journal single- or double-column widths and remain editable as SVG.
 - The repository validator, figure generator, and sample-size script exit successfully from a clean checkout.
 - The GitHub repository is public and the default branch is accessible without authentication.
-

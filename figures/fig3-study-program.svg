@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="467.822281pt" height="309.348pt" viewBox="0 0 467.822281 309.348" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>cerebellar-maintenance-reserve-gating-hypothesis</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 309.348
+L 467.822281 309.348
+L 467.822281 -0
+L 0 -0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 21.456 103.913136
+L 110.736 103.913136
+Q 116.0928 103.913136 116.0928 100.28736
+L 116.0928 54.96516
+Q 116.0928 51.339384 110.736 51.339384
+L 21.456 51.339384
+Q 16.0992 51.339384 16.0992 54.96516
+L 16.0992 100.28736
+Q 16.0992 103.913136 21.456 103.913136
+z
+" clip-path="url(#p6d719a2d50)" style="fill: #e6f4f1; stroke: #24776e; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 141.984 97.870176
+L 222.336 97.870176
+Q 227.6928 97.870176 227.6928 94.2444
+L 227.6928 54.96516
+Q 227.6928 51.339384 222.336 51.339384
+L 141.984 51.339384
+Q 136.6272 51.339384 136.6272 54.96516
+L 136.6272 94.2444
+Q 136.6272 97.870176 141.984 97.870176
+z
+" clip-path="url(#p6d719a2d50)" style="fill: #fff1e3; stroke: #b96b25; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 253.584 97.870176
+L 333.936 97.870176
+Q 339.2928 97.870176 339.2928 94.2444
+L 339.2928 54.96516
+Q 339.2928 51.339384 333.936 51.339384
+L 253.584 51.339384
+Q 248.2272 51.339384 248.2272 54.96516
+L 248.2272 94.2444
+Q 248.2272 97.870176 253.584 97.870176
+z
+" clip-path="url(#p6d719a2d50)" style="fill: #e9f1f8; stroke: #2f5d8a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 360.72 106.934616
+L 436.608 106.934616
+Q 441.9648 106.934616 441.9648 103.30884
+L 441.9648 48.9222
+Q 441.9648 45.296424 436.608 45.296424
+L 360.72 45.296424
+Q 355.3632 45.296424 355.3632 48.9222
+L 355.3632 103.30884
+Q 355.3632 106.934616 360.72 106.934616
+z
+" clip-path="url(#p6d719a2d50)" style="fill: #f8e8ec; stroke: #9c3f50; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 112.72333 77.434098
+Q 126.358902 76.115626 138.60342 74.93166
+" clip-path="url(#p6d719a2d50)" style="fill: none; stroke: #24776e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 134.846892 73.486497
+L 138.60342 74.93166
+L 135.193372 77.069785
+z
+" clip-path="url(#p6d719a2d50)" style="fill: #24776e; stroke: #24776e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 224.338588 74.60478
+Q 237.95991 74.60478 250.183689 74.60478
+" clip-path="url(#p6d719a2d50)" style="fill: none; stroke: #2f5d8a; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 246.583689 72.80478
+L 250.183689 74.60478
+L 246.583689 76.40478
+z
+" clip-path="url(#p6d719a2d50)" style="fill: #2f5d8a; stroke: #2f5d8a; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 335.933684 74.60478
+Q 347.326857 74.60478 357.322487 74.60478
+" clip-path="url(#p6d719a2d50)" style="fill: none; stroke: #9c3f50; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 353.722487 72.80478
+L 357.322487 74.60478
+L 353.722487 76.40478
+z
+" clip-path="url(#p6d719a2d50)" style="fill: #9c3f50; stroke: #9c3f50; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 30.384 224.772336
+L 150.912 224.772336
+Q 156.2688 224.772336 156.2688 221.14656
+L 156.2688 160.71696
+Q 156.2688 157.091184 150.912 157.091184
+L 30.384 157.091184
+Q 25.0272 157.091184 25.0272 160.71696
+L 25.0272 221.14656
+Q 25.0272 224.772336 30.384 224.772336
+z
+" clip-path="url(#p6d719a2d50)" style="fill: #e9f1f8; stroke: #2f5d8a; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 166.536 224.772336
+L 287.064 224.772336
+Q 292.4208 224.772336 292.4208 221.14656
+L 292.4208 160.71696
+Q 292.4208 157.091184 287.064 157.091184
+L 166.536 157.091184
+Q 161.1792 157.091184 161.1792 160.71696
+L 161.1792 221.14656
+Q 161.1792 224.772336 166.536 224.772336
+z
+" clip-path="url(#p6d719a2d50)" style="fill: #e6f4f1; stroke: #24776e; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 302.688 224.772336
+L 423.216 224.772336
+Q 428.5728 224.772336 428.5728 221.14656
+L 428.5728 160.71696
+Q 428.5728 157.091184 423.216 157.091184
+L 302.688 157.091184
+Q 297.3312 157.091184 297.3312 160.71696
+L 297.3312 221.14656
+Q 297.3312 224.772336 302.688 224.772336
+z
+" clip-path="url(#p6d719a2d50)" style="fill: #fff1e3; stroke: #b96b25; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 90.648 146.099001
+Q 90.648 152.406922 90.648 157.3173
+" clip-path="url(#p6d719a2d50)" style="fill: none; stroke: #2f5d8a; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 92.448 153.7173
+L 90.648 157.3173
+L 88.848 153.7173
+z
+" clip-path="url(#p6d719a2d50)" style="fill: #2f5d8a; stroke: #2f5d8a; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 226.8 146.099001
+Q 226.8 152.406922 226.8 157.3173
+" clip-path="url(#p6d719a2d50)" style="fill: none; stroke: #24776e; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 228.6 153.7173
+L 226.8 157.3173
+L 225 153.7173
+z
+" clip-path="url(#p6d719a2d50)" style="fill: #24776e; stroke: #24776e; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 362.952 146.099001
+Q 362.952 152.406922 362.952 157.3173
+" clip-path="url(#p6d719a2d50)" style="fill: none; stroke-dasharray: 5,3.75; stroke-dashoffset: 0; stroke: #b96b25; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 364.752 153.7173
+L 362.952 157.3173
+L 361.152 153.7173
+z
+" clip-path="url(#p6d719a2d50)" style="fill: #b96b25; stroke-dasharray: 5,3.75; stroke-dashoffset: 0; stroke: #b96b25; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 21.456 135.03438
+L 432.144 135.03438
+" clip-path="url(#p6d719a2d50)" style="fill: none; stroke: #d8e0e7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 90.648 144.09882
+L 362.952 144.09882
+" clip-path="url(#p6d719a2d50)" style="fill: none; stroke: #d8e0e7; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 21.456 260.4258
+L 432.144 260.4258
+" clip-path="url(#p6d719a2d50)" style="fill: none; stroke: #d8e0e7; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #162536" x="8.064" y="22.533461" transform="rotate(-0 8.064 22.533461)">Prospective validation and gated early-intervention programme</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(36.129477 71.749854)">5-y natural history</text>
+    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(18.505336 79.343682)">SCA3 | SCA6 | family controls</text>
+    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(19.91807 87.013682)">6-mo clinic | annual imaging</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 6.8px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(156.479375 69.115905)">Locked E* → S*</text>
+    <text style="font-size: 6.8px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(147.7775 77.139905)">window + h + knots</text>
+    <text style="font-size: 6.8px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(148.663094 84.505155)">frozen pre-outcome</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(268.704617 69.196624)">Nested models</text>
+    <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(268.821344 77.043475)">M0 → M1 → M2</text>
+    <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(247.888031 85.008624)">internal–external validation</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 5.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(376.423375 68.430989)">Statistical result</text>
+    <text style="font-size: 5.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(369.646773 74.388176)">G×S* + non-linearity</text>
+    <text style="font-size: 5.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(379.062086 80.878176)">not gate proof</text>
+    <text style="font-size: 5.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(367.693414 87.368176)">not outward-loss proof</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #162536" x="21.456" y="127.48068" transform="rotate(-0 21.456 127.48068)">Independent target-specific evidence gates govern intervention modules</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(48.000656 181.070948)">Conditional SCA3 phase 2</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(51.503813 188.858948)">mutant-ATXN3 lowering</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(46.812141 196.646948)">Gate: SCA3 safety + RP2D</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(47.410266 204.376682)">+ CSF target engagement</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(182.946094 180.993604)">SCA6 phase 2b | 72 weeks</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(191.602406 188.858948)">L-arginine vs placebo</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(187.359328 196.646948)">Staged SARA expansion</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(195.327281 205.016057)">10–12 → 5–9 → 3–4</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(316.354453 181.070948)">Circuit phase 0 (conditional)</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(321.695812 189.498323)">Reliable human classifier</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(313.901109 196.569604)">Precedes decline | normalizes</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(328.231359 204.434948)">Washout reversibility</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(17.080367 234.495143)">Target engagement + disease-activity MRI</text>
+    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(60.568414 242.29692)">not X validation</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(165.814766 234.495143)">Clinical efficacy + withdrawal pattern</text>
+    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(175.877578 242.29692)">not a validated surrogate claim</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(304.389867 234.495143)">Target engagement + reversibility first</text>
+    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(327.513109 242.29692)">not disease modification</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 7.4px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #162536" x="21.456" y="274.02246" transform="rotate(-0 21.456 274.02246)">Shared core: blinded SARA/f-SARA • NfL • genotype-specific MRI/MRS • digital gait • PRO • safety • concurrent controls</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #9c3f50" x="21.456" y="287.61912" transform="rotate(-0 21.456 287.61912)">Failure is informative: no model upgrade; no post-hoc redefinition of S, X, or R; trial gates stay target-specific.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p6d719a2d50">
+   <rect x="3.6" y="3.6" width="446.4" height="302.148"/>
+  </clipPath>
+ </defs>
+</svg>
