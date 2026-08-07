@@ -12,7 +12,7 @@
 
 **Affiliation:** Independent author (no institutional affiliation claimed)
 
-**Correspondence:** via the public repository issue tracker
+**Correspondence:** [278404704@qq.com](mailto:278404704@qq.com); public repository Issues are for non-sensitive discussion only.
 
 ## Abstract
 

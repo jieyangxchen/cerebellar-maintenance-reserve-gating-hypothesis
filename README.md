@@ -102,6 +102,10 @@ tests/        unit tests for equations, scenarios, figures, and validation
 docs/         design and implementation provenance
 ```
 
+## Contact
+
+For scholarly collaboration, corrections, media enquiries, or commercial-licensing requests, email [278404704@qq.com](mailto:278404704@qq.com). Please use public Issues only for non-sensitive questions and corrections; do not post participant-level, genetic, address, or medical information.
+
 ## Safety and ethics
 
 There is no evidence identifying an unknown $X$, its dose, delivery route, or safety profile. No one should use unvalidated electromagnetic fields, radiation, supplements, drugs, neural injury, or gene manipulation on the basis of this repository. Protocol implementation requires a sponsor, product-specific toxicology and manufacturing information, regulatory authorization, ethics approval, trial registration, independent monitoring, qualified sites, and informed consent.
