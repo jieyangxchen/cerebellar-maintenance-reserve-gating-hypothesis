@@ -105,8 +105,8 @@
 **Files:**
 - Modify: Git history and GitHub repository metadata only.
 
-- [ ] Inspect `git status -sb` and the full staged diff.
-- [ ] Commit the complete scoped package with a concise message.
-- [ ] Create `jieyangxchen/cerebellar-maintenance-reserve-gating-hypothesis` as a public repository and push `main`.
-- [ ] Query GitHub for repository visibility, default branch, commit SHA, and public URL.
-- [ ] Fetch the public README URL without credentials; expect HTTP 200.
+- [x] Inspect `git status -sb` and the full staged diff.
+- [x] Commit the complete scoped package with a concise message.
+- [x] Create `jieyangxchen/cerebellar-maintenance-reserve-gating-hypothesis` as a public repository and push `main`.
+- [x] Query GitHub for repository visibility, default branch, commit SHA, and public URL.
+- [x] Fetch the public README URL without credentials; expect HTTP 200.
