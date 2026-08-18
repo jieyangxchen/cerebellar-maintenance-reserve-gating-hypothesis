@@ -1,8 +1,8 @@
-# Prospective SCA3/SCA6 Maintenance–Reserve–Gating Cohort Protocol
+# Prospective SCA3-Led Maintenance–Reserve–Gating Cohort Protocol with SCA6 Transport Testing
 
 - **Protocol identifier:** MRG-SCA-NHS
-- **Version:** 1.0
-- **Date:** 7 August 2026
+- **Version:** 1.1
+- **Date:** 18 August 2026
 - **Design:** Five-year, multicentre, prospective, genotype-stratified natural-history and environmental-exposure cohort
 - **Registration:** The final protocol, exposure specification memorandum, statistical analysis plan, data dictionary, and amendment log will be registered before outcome data are released to the confirmatory analysis team. The observational study will also be registered in a public clinical-study registry using the [ClinicalTrials.gov observational-study data elements](https://clinicaltrials.gov/policy/protocol-definitions).
 
@@ -21,7 +21,7 @@ This protocol does not assume that an unknown external maintenance factor has be
 | Core visits | Baseline and months 6, 12, 18, 24, 30, 36, 42, 48, 54, and 60 |
 | Confirmatory exposure | One outcome-blind selection from a finite two-candidate shortlist, frozen as measured operationalization `E*` and analytic score `S*` before outcome access |
 | Primary outcome | Sustained adjudicated phenoconversion composite among preataxic carriers, analysed as interval-censored age at event |
-| Confirmatory hypotheses | H1, prespecified hump-shaped `S*` association; H2, genotype-by-`S*` interaction; Holm family-wise alpha 0.05 |
+| Confirmatory hypotheses | H1, prespecified hump-shaped `S*` association in SCA3; H2, genotype-by-`S*` interaction/transport; Holm family-wise alpha 0.05 |
 | Key secondary outcomes | SARA trajectory, plasma NfL, genotype-specific MRI, MRS, eye movements, digital gait, FARS-ADL, PROM-Ataxia, and patient-important milestones |
 | Primary analysis | Delayed-entry, interval-censored, genotype-stratified flexible survival model with a frozen restricted cubic spline for `S*` |
 | Hidden-state analysis | A longitudinal latent biomarker state `L(t)` derived without SARA and validated outside its development geography |
@@ -43,15 +43,15 @@ Accordingly, the study is designed to choose one environmental candidate by a fi
 
 ### 2.1 Primary objective
 
-Estimate whether the frozen score `S*` derived from the selected candidate exposure `E*` is associated with the age-specific hazard of sustained, adjudicated phenoconversion among preataxic SCA3 and SCA6 expansion carriers, including the prespecified non-monotonic shape and genotype interaction.
+Estimate whether the frozen score `S*` derived from the selected candidate exposure `E*` is associated with the age-specific hazard of sustained, adjudicated phenoconversion among preataxic SCA3 expansion carriers, including the prespecified non-monotonic shape, and then test transport and heterogeneity in SCA6.
 
 ### 2.2 Confirmatory hypotheses
 
-**H1 — non-monotonic exposure association.** The design-weighted mean of the SCA3 and SCA6 log-hazard curves for `S*` has an intermediate-exposure excess relative to low and high exposure, defined by the frozen hump contrast in the [statistical analysis plan](statistical-analysis-plan.md). Fixing the genotype weights in advance prevents the H1 estimand from changing with realized recruitment or reference-group coding.
+**H1 — SCA3 non-monotonic exposure association.** The SCA3 log-hazard curve for `S*` has an intermediate-exposure excess relative to low and high exposure, defined by the frozen hump contrast in the [statistical analysis plan](statistical-analysis-plan.md). SCA3 is primary because the motivating rural-environment association was SCA3-specific and its prospective conversion information is stronger.
 
-**H2 — genotype-by-environment interaction.** The `S*` curve differs between SCA3 and SCA6. A secondary, lower-powered decomposition examines expanded-repeat length standardized within genotype as an independently measured effect modifier. No outcome-derived score is labelled `R` in confirmatory analyses.
+**H2 — genotype-by-environment interaction and transport.** The `S*` curve differs between SCA3 and SCA6. SCA6 is a deliberately difficult transport and heterogeneity test across a different channelopathy, not automatic pooled confirmation. A secondary, lower-powered decomposition examines expanded-repeat length standardized within genotype as an independently measured effect modifier. No outcome-derived score is labelled `R` in confirmatory analyses.
 
-H1 and H2 form one confirmatory family and use Holm control of the two-sided family-wise error rate at 0.05.
+H1 and H2 form one registered family and use Holm control of the two-sided family-wise error rate at 0.05. A confirmatory H2 interpretation additionally requires the simulation-defined interaction information target; otherwise H2 is reported as an estimate with uncertainty rather than as a negative transport test.
 
 ### 2.3 Key secondary objectives
 
@@ -285,9 +285,9 @@ $$
 0.85\{500(0.25)+300(0.10)\}=131.75.
 $$
 
-Approximately 108 events are required for 90% power to detect a hazard ratio of 1.5 per standard-deviation exposure at two-sided alpha 0.025 when covariates explain 30% of exposure variance. This calculation is adequate only for a relatively simple main association. It does not establish power for a multi-degree-of-freedom hump or H2.
+Approximately 108 events are required for 90% power to detect a hazard ratio of 1.5 per standard-deviation exposure at two-sided alpha 0.025 when covariates explain 30% of exposure variance. This calculation is adequate only for a relatively simple main association. It may support an SCA3-led estimate if exposure support is favourable, but it does not establish power for a multi-degree-of-freedom hump or H2.
 
-For a strong genotype interaction equivalent to an interaction hazard-ratio ratio of 1.7, an optimistic one-parameter approximation gives about 206 events for 80% power and 269 for 90% power under the same alpha and covariate assumptions. The registered H2 is a three-degree-of-freedom curve interaction and requires simulation; these counts are not its power guarantee. Thus an 800-carrier cohort is expected to have limited power for H2. A scenario with 750 preataxic SCA3 and 450 preataxic SCA6 carriers, 35% and 15% five-year conversion, and 85% retention yields about 281 events, but recruitment feasibility and three-degree-of-freedom power remain uncertain.
+For a strong genotype interaction equivalent to an interaction hazard-ratio ratio of 1.7, an optimistic one-parameter approximation gives about 206 events for 80% power and 269 for 90% power under the same alpha and covariate assumptions. The registered H2 is a three-degree-of-freedom curve interaction and requires simulation; these counts are not its power guarantee. Thus an 800-carrier cohort is expected to have limited power for H2. A scenario with 750 preataxic SCA3 and 450 preataxic SCA6 carriers, 35% and 15% five-year conversion, and 85% retention yields about 281 events, but recruitment feasibility and three-degree-of-freedom power remain uncertain. Recruitment proportions never define biological or target-population weights.
 
 At months 36 and 48, an independent committee may use only blinded aggregate recruitment, retention, exposure-support, and event counts to recommend extension to month 84 or additional sites. It may not inspect exposure-effect estimates. If the final event count cannot support H2, H2 is reported with uncertainty and cannot be presented as a definitive negative interaction test.
 

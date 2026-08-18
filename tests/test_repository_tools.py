@@ -9,6 +9,7 @@ import unittest
 from pathlib import Path
 
 import numpy as np
+import scripts.validate_repository as repository_validation
 
 from analysis.sample_size_scenarios import (
     build_sample_size_scenarios,
@@ -177,8 +178,83 @@ class GatingModelTests(unittest.TestCase):
             second_by_name = {path.name: path.read_bytes() for path in second_outputs}
             self.assertEqual(first_by_name, second_by_name)
 
+    def test_figure_three_marks_sca3_primary_and_sca6_as_transport_test(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            generate_all(Path(tmp))
+            svg = (Path(tmp) / "fig3-study-program.svg").read_text(encoding="utf-8")
+            self.assertIn("SCA3 primary test bed", svg)
+            self.assertIn("SCA6 transport test", svg)
+            self.assertIn("Known-target examples", svg)
+
 
 class RepositoryValidationTests(unittest.TestCase):
+    def test_default_required_files_include_the_cerebellum_submission_package(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            errors = find_missing_required_files(Path(tmp))
+            self.assertIn(
+                "missing required file: submission/the-cerebellum/presubmission-inquiry.md",
+                errors,
+            )
+            self.assertIn(
+                "missing required file: submission/the-cerebellum/submission-checklist.md",
+                errors,
+            )
+
+    def test_the_cerebellum_readiness_flags_format_and_prior_art_failures(self) -> None:
+        checker = getattr(
+            repository_validation, "find_the_cerebellum_readiness_errors", None
+        )
+        self.assertIsNotNone(checker)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "manuscript").mkdir()
+            overlong_abstract = " ".join(["word"] * 251)
+            (root / "manuscript" / "manuscript.md").write_text(
+                "# Unfocused title\n\n"
+                f"## Abstract\n\n{overlong_abstract}\n\n"
+                "**Keywords:** one; two\n\n"
+                "#### Too deep\n",
+                encoding="utf-8",
+            )
+            (root / "manuscript" / "references.bib").write_text(
+                "@article{unrelated}\n", encoding="utf-8"
+            )
+            errors = checker(root)
+            self.assertTrue(any("target title" in error for error in errors))
+            self.assertTrue(any("abstract" in error for error in errors))
+            self.assertTrue(any("keywords" in error for error in errors))
+            self.assertTrue(any("heading level" in error for error in errors))
+            self.assertTrue(any("cerebellar-reserve prior art" in error for error in errors))
+
+    def test_repository_meets_the_cerebellum_readiness_checks(self) -> None:
+        checker = getattr(
+            repository_validation, "find_the_cerebellum_readiness_errors", None
+        )
+        self.assertIsNotNone(checker)
+        root = Path(__file__).resolve().parents[1]
+        self.assertEqual(checker(root), [])
+
+    def test_the_cerebellum_readiness_reports_uncited_numbered_references(self) -> None:
+        checker = repository_validation.find_the_cerebellum_readiness_errors
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "manuscript").mkdir()
+            (root / "manuscript" / "manuscript.md").write_text(
+                "# A Maintenance–Reserve–Gating Framework for Modifier Effects in "
+                "Hereditary Cerebellar Ataxia\n\n"
+                "## Abstract\n\nShort abstract.\n\n"
+                "**Keywords:** one; two; three; four\n\n"
+                "## Main text\n\nNo numbered citation.\n\n"
+                "## References\n\n1. Uncited reference.\n",
+                encoding="utf-8",
+            )
+            (root / "manuscript" / "references.bib").write_text(
+                "10.1007/s12311-019-01091-9\n10.1007/s12311-018-0925-6\n",
+                encoding="utf-8",
+            )
+            errors = checker(root)
+            self.assertTrue(any("uncited numbered references" in error for error in errors))
+
     def test_documented_validator_command_runs_from_repository_root(self) -> None:
         root = Path(__file__).resolve().parents[1]
         environment = os.environ.copy()

@@ -1,8 +1,8 @@
-# Evidence Audit for the External Maintenance Factor–Reserve–Gating Hypothesis
+# Evidence Audit for the Maintenance–Reserve–Gating Framework
 
-**Audit date:** 7 August 2026
-**Scope:** Core empirical statements, all 23 numbered references in the current manuscript, and three additional primary studies retained to support or qualify related statements in the evidence package.
-**Source policy:** Primary research articles, PubMed/PubMed Central, publisher records, and the official ClinicalTrials.gov record were used. No secondary news coverage was used as evidence.
+**Audit date:** 18 August 2026
+**Scope:** Core empirical statements, all 25 numbered references in the current manuscript, and additional primary or consensus sources retained to support or qualify related statements in the evidence package.
+**Source policy:** Primary research articles, the two explicitly labelled cerebellar-reserve consensus/concept papers, PubMed/PubMed Central, publisher records, and the official ClinicalTrials.gov record were used. No secondary news coverage was used as evidence.
 
 ## 1. Purpose and interpretation
 
@@ -12,7 +12,7 @@ This appendix separates three questions that must not be conflated:
 2. Does the cited study support the local factual statement made in the manuscript?
 3. Does the study support the proposed unified variables $X$, $R$, $B$, $P$, or $L$, the outward-leak mechanism, or a hump-shaped exposure-risk curve?
 
-The answer to the third question is currently **no**. The literature supports several premises that motivate the hypothesis—age-at-onset heterogeneity, exploratory environmental associations, multicellular pathology, early circuit dysfunction, stage-dependent reversibility in animal models, and candidate early biomarkers. It does not directly demonstrate a single external maintenance factor, a genetically determined coupling capacity, a depletable maintenance reserve, an exposure-gated exchange channel, a shared latent state, reverse resource leakage, or non-monotonic exposure risk.
+The answer to the third question is currently **no**. The literature supports established concepts of structural and functional cerebellar reserve and several premises that motivate the new extension—age-at-onset heterogeneity, exploratory environmental associations, multicellular pathology, early circuit dysfunction, stage-dependent reversibility in animal models, and candidate early biomarkers. It does not directly demonstrate a single external maintenance input, the proposed dynamic reserve flux, a genetically determined coupling capacity, an exposure-gated exchange channel, a shared latent state, reverse resource leakage, or non-monotonic exposure risk.
 
 No audited research article was flagged as retracted in the checked PubMed or publisher records as of the audit date.
 
@@ -26,6 +26,7 @@ The tiers describe what language the evidence permits; they are not journal pres
 | **T2: human observational or registry evidence** | Cohort, family series, twin series, ecological analysis, cross-sectional biomarker study, multisite test–retest study, or official trial registry | “Was associated with”, “was observed in”, “the registry lists” | Causality, individual exposure attribution from ecological proxies, validated surrogate status, or proof of a proposed mechanism |
 | **T3: preclinical mechanistic evidence** | Mouse, cell, organotypic, structural, iPSC, or non-mammalian model | “In this model”, “supports a model-specific proof of principle” | Human efficacy, clinical reversibility, physiological relevance outside the tested conditions, or a universal SCA mechanism |
 | **T4: formal hypothesis only** | Mathematical construct or prediction without direct empirical measurement | “We posit”, “the model predicts”, “a preregistered test would evaluate” | “Evidence shows”, “is”, “causes”, or any presentation as an established biological entity |
+| **C1: conceptual prior art** | Consensus, review, or opinion source used to establish an existing definition or research principle | “The framework defines”, “the authors propose”, with the source type explicit | Treating consensus language as direct proof of a new molecular mechanism or clinical efficacy |
 
 ### Verdict vocabulary
 
@@ -167,6 +168,20 @@ The tiers describe what language the evidence permits; they are not journal pres
 **Source:** [PMC full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC11701440/) — DOI: [10.1016/j.eclinm.2024.102952](https://doi.org/10.1016/j.eclinm.2024.102952)
 
 ## 4. Additional audited records required for defensible wording
+
+### `mitoma2020reserve` — established cerebellar-reserve framework
+
+**Verdict:** confirmed conceptual prior art, C1.
+**Finding:** The consensus paper defines cerebellar reserve as the capacity to compensate and restore function in response to pathology, distinguishes structural and functional reserve, and discusses plasticity and environmental enrichment. It provides the required prior framework for any new use of “reserve” in a cerebellar hypothesis.
+**Required wording:** “The proposed dynamic reserve $B(t)$ is nested within but not equivalent to established structural and functional cerebellar reserve.” The consensus does not measure $B(t)$, $X$, gating, outward leakage, or a human exposure-risk hump.
+[PMC full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC6978293/) — DOI: [10.1007/s12311-019-01091-9](https://doi.org/10.1007/s12311-019-01091-9)
+
+### `mitoma2018time` — early-intervention principle
+
+**Verdict:** confirmed conceptual prior art, C1.
+**Finding:** The editorial proposes “Time Is Cerebellum,” emphasizing treatment while cerebellar reserve remains and before advanced cell loss.
+**Required wording:** This source supports the priority of early intervention as a clinical principle. It does not establish reversibility in hereditary SCA, a specific intervention, or the maintenance–reserve–gating mechanism.
+[PMC full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC6007694/) — DOI: [10.1007/s12311-018-0925-6](https://doi.org/10.1007/s12311-018-0925-6)
 
 ### `meyer2026` — APOE ε4 modifier claim
 

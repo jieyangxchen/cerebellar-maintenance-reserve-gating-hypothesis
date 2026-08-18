@@ -1,9 +1,9 @@
-# Statistical Analysis Plan: Prospective SCA3/SCA6 Maintenance–Reserve–Gating Cohort
+# Statistical Analysis Plan: Prospective SCA3-Led Maintenance–Reserve–Gating Cohort with SCA6 Transport Testing
 
 - **SAP identifier:** MRG-SCA-NHS-SAP
-- **Version:** 1.0
-- **Date:** 7 August 2026
-- **Companion protocol:** [Prospective SCA3/SCA6 Maintenance–Reserve–Gating Cohort Protocol](prospective-cohort.md)
+- **Version:** 1.1
+- **Date:** 18 August 2026
+- **Companion protocol:** [Prospective SCA3-Led Maintenance–Reserve–Gating Cohort Protocol with SCA6 Transport Testing](prospective-cohort.md)
 - **Status:** To be frozen before the confirmatory analysis team receives outcome-linked exposure data
 
 ## 1. Purpose and inferential boundary
@@ -89,7 +89,7 @@ External validation requires a geography, health system, or prospectively enroll
 
 `S*=h(E*;theta)` is the median- and interquartile-range-scaled value of top-coded `E*` defined in the protocol. The top-coding rule, eligible exposure-only population, median, interquartile range, and failure rule are frozen before outcome access. All confirmatory spline, interaction, and longitudinal exposure terms use `S*`; raw-unit `E*` summaries remain descriptive. This fixed bridge does not identify `X` and cannot be re-estimated from SCA outcomes.
 
-The primary restricted cubic spline for `S*` has four knots at the 5th, 35th, 65th, and 95th percentiles of the eligible outcome-blind score distribution. The 10th, 50th, and 90th percentiles define the low, middle, and high contrast points. H1 uses fixed design weights of 0.625 for SCA3 and 0.375 for SCA6, matching the planned 500:300 preataxic recruitment ratio; realized recruitment does not change these weights. If a structural zero mass makes the contrast points non-identifiable, the memorandum must freeze an indicator-plus-spline parameterization and corresponding low/middle/high contrast points before outcome access. Outcome-guided knot, quantile, or weight changes are not allowed.
+The primary restricted cubic spline for `S*` has four knots at the 5th, 35th, 65th, and 95th percentiles of the eligible outcome-blind SCA3 score distribution within the common-support region. The 10th, 50th, and 90th percentiles define the low, middle, and high H1 contrast points. SCA6 uses the same frozen score transformation and evaluates the portion of this contrast supported by its observed exposure range; unsupported extrapolation is not called transport failure. If a structural zero mass makes the contrast points non-identifiable, the memorandum must freeze an indicator-plus-spline parameterization and corresponding low/middle/high contrast points before outcome access. Outcome-guided knot, quantile, or target-population weight changes are not allowed.
 
 ### 4.4 Primary event interval
 
@@ -124,19 +124,18 @@ $$
 \frac{f_g(Q_{10})+f_g(Q_{90})}{2}.
 $$
 
-The primary H1 estimand is the frozen design-weighted contrast:
+The primary H1 estimand is the frozen SCA3 contrast:
 
 $$
-\Delta_{H1}
-=0.625\Delta_{hump,3}+0.375\Delta_{hump,6}.
+\Delta_{H1}=\Delta_{hump,3}.
 $$
 
-The null is `Delta_H1 = 0`; the registered test is a two-sided, family-cluster-bootstrap-calibrated Wald test. Its raw bootstrap-calibrated p value enters Holm. This definition is invariant to the model's reference-genotype coding. Support for the predicted hump additionally requires:
+The null is `Delta_H1 = 0`; the registered test is a two-sided, family-cluster-bootstrap-calibrated Wald test. Its raw bootstrap-calibrated p value enters Holm. Support for the predicted hump additionally requires:
 
 - `Delta_H1 > 0`;
-- both design-weighted side contrasts, `f_w(Q50)-f_w(Q10)` and `f_w(Q50)-f_w(Q90)`, have lower bounds above zero in a 95% simultaneous max-t family-cluster-bootstrap confidence set, where `f_w(S)=0.625f_3(S)+0.375f_6(S)`;
-- the maximum of `f_w(E)` over `[Q10,Q90]` lies in the frozen middle region `[Q35,Q65]`;
-- `Q10`, `Q50`, and `Q90` satisfy the exposure-support gate in both genotypes.
+- both SCA3 side contrasts, `f_3(Q50)-f_3(Q10)` and `f_3(Q50)-f_3(Q90)`, have lower bounds above zero in a 95% simultaneous max-t family-cluster-bootstrap confidence set;
+- the maximum of `f_3(E)` over `[Q10,Q90]` lies in the frozen middle region `[Q35,Q65]`;
+- `Q10`, `Q50`, and `Q90` satisfy the exposure-support gate in SCA3.
 
 The side contrasts and peak-location rule are directional interpretation requirements, not opportunities to select a different primary p value. A global two-degree-of-freedom test of non-linear spline components is reported as supportive.
 
@@ -181,7 +180,7 @@ f_g(S_i^*)+
 \right\}.
 $$
 
-The fitted implementation parameterizes `f_3(S)` as the three-degree-of-freedom main spline and `f_6(S)-f_3(S)` as the three interaction terms. H1 is calculated from the fixed weighted contrast above rather than from the reference-group main-effect coefficients.
+The fitted implementation parameterizes `f_3(S)` as the three-degree-of-freedom main spline and `f_6(S)-f_3(S)` as the three interaction terms. H1 is calculated from the frozen SCA3 curve; H2 evaluates heterogeneity and transport only over prespecified common support.
 
 For interval `(L_i,R_i]`, the conditional likelihood contribution is proportional to:
 
@@ -386,7 +385,7 @@ This may support H1 if the exposure distribution is favourable and the effect is
 
 ### 14.3 Interaction requirement
 
-For genotype proportions 0.625 and 0.375, the planning-only one-parameter model uses one SD of `S*` and defines `exp(gamma)=1.7`, where `gamma` is the SCA6-versus-SCA3 difference in log hazard ratio per one-SD higher score. That **linear-interaction** approximation requires about 206 events for 80% power and 269 for 90% power at two-sided alpha 0.025 with `R_S^2=0.30`. These are optimistic information benchmarks, not power calculations for the registered three-degree-of-freedom H2. An illustrative 1,200-carrier scenario with 750 SCA3, 450 SCA6, five-year risks 35% and 15%, and 85% retention yields about 281 events, but three-degree-of-freedom power must be established by the frozen simulation.
+For the planned recruitment proportions of 0.625 SCA3 and 0.375 SCA6, the planning-only one-parameter model uses one SD of `S*` and defines `exp(gamma)=1.7`, where `gamma` is the SCA6-versus-SCA3 difference in log hazard ratio per one-SD higher score. These proportions are simulation inputs, not biological weights or the H1 estimand. That **linear-interaction** approximation requires about 206 events for 80% power and 269 for 90% power at two-sided alpha 0.025 with `R_S^2=0.30`. These are optimistic information benchmarks, not power calculations for the registered three-degree-of-freedom H2. An illustrative 1,200-carrier scenario with 750 SCA3, 450 SCA6, five-year risks 35% and 15%, and 85% retention yields about 281 events, but three-degree-of-freedom power must be established by the frozen simulation.
 
 Accordingly:
 

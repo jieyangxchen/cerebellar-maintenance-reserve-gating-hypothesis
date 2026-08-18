@@ -1,0 +1,33 @@
+# Draft presubmission inquiry to *The Cerebellum*
+
+**Status:** draft for author review; not sent
+
+**To:** Editors, *The Cerebellum*
+
+**Subject:** Presubmission inquiry — *A Maintenance–Reserve–Gating Framework for Modifier Effects in Hereditary Cerebellar Ataxia*
+
+Dear Editors,
+
+I am writing to ask whether the enclosed manuscript would be suitable for consideration by *The Cerebellum* as a “new ideas, opinion and controversies” article or, if the editors consider it more appropriate, an in-depth review.
+
+The manuscript proposes a falsifiable framework for timing heterogeneity in hereditary cerebellar ataxias. It explicitly builds on the established structural and functional concepts of cerebellar reserve, while separating two evidentiary layers: (1) an observable modifier model in which a prospectively frozen measured exposure score is tested for non-linear and genotype-specific associations with phenoconversion and biomarker trajectories; and (2) a mechanistic extension involving a candidate external input, activation/exchange gating, and dynamic reserve. The second layer is presented as conjecture and is rejected unless independent activation, uptake/exchange, reserve-proxy, temporal, and perturbational evidence is obtained.
+
+The manuscript uses SCA3 as the primary proposed test bed and SCA6 as a deliberately difficult transport and heterogeneity test. It includes three original mechanism/study-design figures, layer-specific falsification rules, an evidence audit, and linked prospective cohort and early-intervention protocol concepts. The intervention examples concern known molecular or circuit targets and are not presented as tests of the unknown input or as treatment recommendations.
+
+The current manuscript is approximately 5,500 words excluding references, contains an approximately 228-word abstract, 6 keywords, 3 figures, and 25 references. It reports no participant-level data or new human or animal experiments. The exact Word-processor count will be confirmed in the submission file.
+
+A version of the manuscript package has been publicly available in a non-commercially licensed GitHub repository: <https://github.com/jieyangxchen/cerebellar-maintenance-reserve-gating-hypothesis>. Before formal submission, I would be grateful for confirmation that this public manuscript/repository history is compatible with the journal's prior-publication and preprint policies, and for advice on the most appropriate article category.
+
+If the topic is potentially suitable, I will prepare the manuscript in Word and complete all title-page, affiliation/address, funding, competing-interest, authorship, AI-assistance, and other disclosures required by the journal before submission.
+
+Thank you for considering this inquiry.
+
+Sincerely,
+
+Jieyang Chen
+
+Independent author
+
+Email: 278404704@qq.com
+
+ORCID: [AUTHOR TO INSERT OR REMOVE]

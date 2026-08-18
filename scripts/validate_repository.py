@@ -43,6 +43,8 @@ REQUIRED_FILES = (
     "protocols/statistical-analysis-plan.md",
     "evidence/evidence-audit.md",
     "evidence/evidence-matrix.tsv",
+    "submission/the-cerebellum/presubmission-inquiry.md",
+    "submission/the-cerebellum/submission-checklist.md",
     "figures/fig1-framework.svg",
     "figures/fig1-framework.pdf",
     "figures/fig1-framework.png",
@@ -84,6 +86,15 @@ LICENSE_MARKERS = {
     "README.md": "CC BY-NC 4.0",
     "CITATION.cff": "license: CC-BY-NC-4.0",
 }
+THE_CEREBELLUM_TARGET_TITLE = (
+    "A Maintenance–Reserve–Gating Framework for Modifier Effects in "
+    "Hereditary Cerebellar Ataxia"
+)
+ABSTRACT_WORD = re.compile(r"\b[A-Za-z0-9][A-Za-z0-9'–-]*\b")
+RESERVE_PRIOR_ART_DOIS = (
+    "10.1007/s12311-019-01091-9",
+    "10.1007/s12311-018-0925-6",
+)
 
 
 def _text_files(root: Path):
@@ -234,6 +245,95 @@ def find_evidence_matrix_errors(root: Path) -> list[str]:
     return errors
 
 
+def find_the_cerebellum_readiness_errors(root: Path) -> list[str]:
+    """Check stable journal-facing constraints in the Markdown source package."""
+
+    manuscript_path = root / "manuscript" / "manuscript.md"
+    bibliography_path = root / "manuscript" / "references.bib"
+    if not manuscript_path.is_file():
+        return []
+
+    errors: list[str] = []
+    manuscript = manuscript_path.read_text(encoding="utf-8")
+    first_heading = next(
+        (line[2:].strip() for line in manuscript.splitlines() if line.startswith("# ")),
+        "",
+    )
+    if first_heading != THE_CEREBELLUM_TARGET_TITLE:
+        errors.append("manuscript/manuscript.md: target title is not frozen")
+
+    abstract_match = re.search(
+        r"^## Abstract\s*$\n(.*?)(?=^\*\*Keywords:\*\*)",
+        manuscript,
+        flags=re.MULTILINE | re.DOTALL,
+    )
+    if not abstract_match:
+        errors.append("manuscript/manuscript.md: abstract block not found")
+    else:
+        abstract_words = ABSTRACT_WORD.findall(abstract_match.group(1))
+        if len(abstract_words) > 250:
+            errors.append(
+                "manuscript/manuscript.md: abstract exceeds 250 words "
+                f"({len(abstract_words)})"
+            )
+
+    keywords_match = re.search(r"^\*\*Keywords:\*\*\s*(.+)$", manuscript, re.MULTILINE)
+    if not keywords_match:
+        errors.append("manuscript/manuscript.md: keywords line not found")
+    else:
+        keywords = [item.strip() for item in keywords_match.group(1).split(";")]
+        keywords = [item for item in keywords if item]
+        if not 4 <= len(keywords) <= 6:
+            errors.append(
+                "manuscript/manuscript.md: keywords must number 4 to 6 "
+                f"({len(keywords)})"
+            )
+
+    heading_levels = [
+        len(match.group(1))
+        for match in re.finditer(r"^(#+)\s+", manuscript, flags=re.MULTILINE)
+    ]
+    if heading_levels and max(heading_levels) > 3:
+        errors.append(
+            "manuscript/manuscript.md: heading level exceeds journal maximum of 3"
+        )
+
+    if "\n## References\n" in manuscript:
+        body, references = manuscript.split("\n## References\n", maxsplit=1)
+        reference_numbers = {
+            int(number)
+            for number in re.findall(r"^(\d+)\.\s+", references, flags=re.MULTILINE)
+        }
+        cited_numbers = {
+            int(number)
+            for group in re.findall(r"\[([0-9,\s–-]+)\]", body)
+            for number in re.findall(r"\d+", group)
+        }
+        uncited = sorted(reference_numbers - cited_numbers)
+        missing = sorted(cited_numbers - reference_numbers)
+        if uncited:
+            errors.append(
+                "manuscript/manuscript.md: uncited numbered references: "
+                + ", ".join(map(str, uncited))
+            )
+        if missing:
+            errors.append(
+                "manuscript/manuscript.md: citations missing from reference list: "
+                + ", ".join(map(str, missing))
+            )
+
+    bibliography = (
+        bibliography_path.read_text(encoding="utf-8")
+        if bibliography_path.is_file()
+        else ""
+    )
+    if any(doi not in bibliography for doi in RESERVE_PRIOR_ART_DOIS):
+        errors.append(
+            "manuscript/references.bib: missing cerebellar-reserve prior art"
+        )
+    return errors
+
+
 def find_stale_generated_files(root: Path) -> list[str]:
     """Regenerate deterministic outputs and report checked-in byte mismatches."""
 
@@ -261,6 +361,7 @@ def validate_repository(root: Path) -> list[str]:
         *find_invalid_doi_declarations(root),
         *find_legacy_math_delimiters(root),
         *find_evidence_matrix_errors(root),
+        *find_the_cerebellum_readiness_errors(root),
         *find_stale_generated_files(root),
         *find_unsafe_claims(root),
     ]

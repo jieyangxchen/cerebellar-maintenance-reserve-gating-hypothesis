@@ -199,8 +199,8 @@ L 432.144 260.4258
    </g>
    <g id="text_2">
     <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(36.129477 71.749854)">5-y natural history</text>
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(18.505336 79.343682)">SCA3 | SCA6 | family controls</text>
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(19.91807 87.013682)">6-mo clinic | annual imaging</text>
+    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(29.287211 79.419854)">SCA3 primary test bed</text>
+    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(18.030023 87.013682)">SCA6 transport test | controls</text>
    </g>
    <g id="text_3">
     <text style="font-size: 6.8px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(156.479375 69.115905)">Locked E* → S*</text>
@@ -209,8 +209,8 @@ L 432.144 260.4258
    </g>
    <g id="text_4">
     <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(268.704617 69.196624)">Nested models</text>
-    <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(268.821344 77.043475)">M0 → M1 → M2</text>
-    <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(247.888031 85.008624)">internal–external validation</text>
+    <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(241.704664 76.453561)">SCA3 H1 + external replication</text>
+    <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(254.186555 84.300413)">SCA6 transport + G×S*</text>
    </g>
    <g id="text_5">
     <text style="font-size: 5.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(376.423375 68.430989)">Statistical result</text>
@@ -219,19 +219,19 @@ L 432.144 260.4258
     <text style="font-size: 5.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(367.693414 87.368176)">not outward-loss proof</text>
    </g>
    <g id="text_6">
-    <text style="font-weight: 700; font-size: 8.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #162536" x="21.456" y="127.48068" transform="rotate(-0 21.456 127.48068)">Independent target-specific evidence gates govern intervention modules</text>
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #162536" x="21.456" y="127.48068" transform="rotate(-0 21.456 127.48068)">Known-target examples: independent evidence gates govern every intervention module</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(48.000656 181.070948)">Conditional SCA3 phase 2</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(42.188016 181.070948)">Known-target example: SCA3</text>
     <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(51.503813 188.858948)">mutant-ATXN3 lowering</text>
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(46.812141 196.646948)">Gate: SCA3 safety + RP2D</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(53.042438 196.646948)">Only after safety, dose</text>
     <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(47.410266 204.376682)">+ CSF target engagement</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(182.946094 180.993604)">SCA6 phase 2b | 72 weeks</text>
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(191.602406 188.858948)">L-arginine vs placebo</text>
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(187.359328 196.646948)">Staged SARA expansion</text>
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(195.327281 205.016057)">10–12 → 5–9 → 3–4</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(178.340016 181.070948)">Known-target example: SCA6</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(190.361297 188.858948)">L-arginine uncertainty</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(181.236281 197.286323)">Randomized clinical benefit</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(176.426531 204.434948)">+ enhanced safety monitoring</text>
    </g>
    <g id="text_9">
     <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(316.354453 181.070948)">Circuit phase 0 (conditional)</text>

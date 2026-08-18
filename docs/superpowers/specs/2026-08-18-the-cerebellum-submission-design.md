@@ -54,4 +54,3 @@ The repository will contain:
 - The abstract is at most 250 words and the keyword list contains 4–6 terms.
 - Funding, competing interests, ethics applicability, author contribution, data/code availability, and AI-assistance statements are present without inventing author-supplied facts.
 - Repository validation, tests, sample-size generation, figure generation, and whitespace checks pass.
-

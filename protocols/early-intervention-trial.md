@@ -2,9 +2,11 @@
 
 **Protocol status:** submission-oriented concept protocols, not treatment recommendations
 
-**Evidence status date:** 2026-08-07
+**Evidence status date:** 2026-08-18
 
 **Intended use:** prospective scientific advice, sponsor discussion, ethics review planning, and protocol development
+
+These modules illustrate how early modifiability of already known molecular or circuit targets could be tested. They do not test or validate the candidate external input, gating function, or reserve flux proposed in the accompanying framework.
 
 ## Synopsis and design decision
 

@@ -1,10 +1,11 @@
-# Cerebellar Maintenance–Reserve–Gating Hypothesis
+# Maintenance–Reserve–Gating Framework for Hereditary Cerebellar Ataxia
 
 [![Status: hypothesis and protocol](https://img.shields.io/badge/status-hypothesis%20%2B%20protocol-B96B25)](#scientific-status)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-287D61)](LICENSE)
-[![Evidence cut-off](https://img.shields.io/badge/evidence%20cut--off-2026--08--07-2F5D8A)](evidence/evidence-audit.md)
+[![Target: The Cerebellum](https://img.shields.io/badge/target-The%20Cerebellum-6A4C93)](submission/the-cerebellum/submission-checklist.md)
+[![Evidence cut-off](https://img.shields.io/badge/evidence%20cut--off-2026--08--18-2F5D8A)](evidence/evidence-audit.md)
 
-A public, submission-oriented Hypothesis/Perspective package for testing whether hereditary cerebellar degeneration can include a mismatch between genetic demand, externally conditioned system activation, and finite homeostatic reserve.
+A public, submission-oriented new-ideas/in-depth-review package for testing whether modifier effects in hereditary cerebellar ataxia can include a mismatch between genetic demand, externally conditioned system activation, and finite homeostatic reserve. Version 0.2.0 is tailored for a presubmission inquiry to *The Cerebellum*; it has not been submitted, peer reviewed, or accepted.
 
 The central discipline of this repository is simple: **the derived exposure score $S$ is not the unknown biological input $X$; $X$, the gate, outward leak, reserve state, and hump-shaped human risk curve are hypotheses—not discoveries.** The package turns them into prespecified predictions that can fail, while keeping clinical intervention focused on known, measurable biology.
 
@@ -15,6 +16,8 @@ The central discipline of this repository is simple: **the derived exposure scor
 - [Statistical analysis plan](protocols/statistical-analysis-plan.md)
 - [Evidence audit](evidence/evidence-audit.md)
 - [Evidence matrix](evidence/evidence-matrix.tsv)
+- [Draft presubmission inquiry](submission/the-cerebellum/presubmission-inquiry.md)
+- [The Cerebellum submission checklist](submission/the-cerebellum/submission-checklist.md)
 
 ## The three figures
 
@@ -42,27 +45,27 @@ This is a research hypothesis and protocol concept, not a peer-reviewed mechanis
 
 | Claim level | What this repository says |
 |---|---|
-| Established | SCA onset and progression vary beyond the causal repeat; early biomarkers, multicellular effects, and stage-dependent reversibility occur in specific cohorts or models. |
+| Established | SCA onset and progression vary beyond the causal repeat; structural and functional cerebellar reserve are established concepts; early biomarkers, multicellular effects, and stage-dependent reversibility occur in specific cohorts or models. |
 | Supported analogy | Resilience, network state, and restoration of a defined missing synaptic input can matter in cerebellar biology. |
 | Testable inference | One prelocked measured exposure may show a non-monotonic association and genotype interaction that precedes biomarker change. |
-| Speculation | A shared external maintenance input and exchange gate exist across hereditary cerebellar degenerations. |
+| Mechanistic extension | A candidate external input, activation/exchange gate, and dynamic reserve flux generate ordered mediator predictions. These entities are not observed facts. |
 
 The [claim-level audit](evidence/evidence-audit.md) documents the model system, population, limitation, DOI or primary source, and corrected wording for every major statement.
 
 ## Prospective programme at a glance
 
-The observational core is a five-year, multicentre, family-aware SCA3/SCA6 cohort. Phenoconversion is analysed with age as the time scale, delayed entry, interval censoring, and family/site structure. One measured exposure operationalization $E^*$ is selected from a finite two-candidate shortlist by a registered outcome-blind rubric; its derived score $S^*=h(E^*;\theta)$, lag, spatial rule, spline knots, and missing-data rules are then frozen before outcome analysis. Even a replicated hump and genotype interaction would support only a non-linear environmental association, not a gate or leak. Residual age at onset is descriptive, not the primary estimand.
+The observational core is a five-year, multicentre, family-aware SCA3/SCA6 cohort. SCA3 is the primary test bed; SCA6 is a transport and heterogeneity test, not automatic pooled confirmation. Phenoconversion is analysed with age as the time scale, delayed entry, interval censoring, and family/site structure. One measured exposure operationalization $E^*$ is selected from a finite two-candidate shortlist by a registered outcome-blind rubric; its derived score $S^*=h(E^*;\theta)$, lag, spatial rule, spline knots, and missing-data rules are then frozen before outcome analysis. The pesticide and untreated-well candidates are rural-environment proxies, not maintenance resources or direct measurements of $X$. Even a replicated hump and genotype interaction would support only a non-linear environmental association, not a gate or leak. Residual age at onset is descriptive, not the primary estimand.
 
 The event-driven planning scenarios are intentionally transparent:
 
 - About 108 conversions for a simplified linear exposure effect (HR 1.5 per SD, 90% power, two-sided α 0.025, covariate $R^2=0.30$).
-- An 800-carrier scenario (500 SCA3 + 300 SCA6) yields about 132 observed five-year conversions under stated assumptions—potentially adequate for a main effect, not a flexible genotype interaction.
-- An expanded 1,200-carrier scenario yields about 281 events under more mature conversion assumptions; final sizing still requires simulation.
+- An 800-carrier scenario (500 SCA3 + 300 SCA6) yields about 132 observed five-year conversions under stated assumptions—potentially adequate for an SCA3-led exposure estimate if exposure support is favourable, but not a flexible genotype interaction.
+- Recruitment ratios do not define biological or target-population weights. Final sizing and any interaction claim require frozen simulation of genotype-specific support, interval censoring, family clustering, exposure error, and site heterogeneity.
 
 There is no pooled SCA3/SCA6 pharmacologic efficacy trial:
 
-- **SCA3:** conditional mutant-ATXN3-lowering phase 2, activated only after SCA3 human safety, RP2D, and CSF target engagement; central scenario $n\approx120$.
-- **SCA6:** staged early-manifest L-arginine phase 2b, $n=240$, fixed 80-person caps in each SARA band, numerical expansion gates, 72-week treatment, and a separately defined 12-week blinded-withdrawal estimand.
+- **SCA3:** conditional, target-engagement-led mutant-ATXN3 lowering only after agent-specific human safety and dose information; clinical benefit is not established.
+- **SCA6:** L-arginine remains clinically uncertain; a confirmatory study would require conservative effect assumptions, concurrent randomized controls, staged entry into earlier disease, and enhanced safety monitoring.
 - **Circuit phase 0:** no activation until four reliability, temporal-precedence, normalization, and washout gates are met.
 
 These trials test early modifiability of known targets. They do not validate $X$.
@@ -100,6 +103,7 @@ analysis/     transparent sample-size functions and scenario CSV
 scripts/      repository-level integrity and safety checks
 tests/        unit tests for equations, scenarios, figures, and validation
 docs/         design and implementation provenance
+submission/   presubmission inquiry and journal-specific completion checklist
 ```
 
 ## Contact
@@ -114,7 +118,7 @@ Residential histories and genetic-carrier data are sensitive. Any real cohort mu
 
 ## Versioning, citation, and license
 
-The evidence cut-off for version 0.1.0 is **7 August 2026**. Current trial status is timestamped rather than assumed to remain current.
+The evidence cut-off for version 0.2.0 is **18 August 2026**. Current trial status is timestamped rather than assumed to remain current.
 
 Please cite using [CITATION.cff](CITATION.cff). Text, protocols, original figures, and code are released under [CC BY-NC 4.0](LICENSE): personal use and non-commercial research, teaching, sharing, and adaptation are permitted with attribution; commercial use requires separate permission from the copyright holder. Third-party papers and linked materials retain their original copyright.
 
