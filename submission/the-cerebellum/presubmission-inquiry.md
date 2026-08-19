@@ -1,6 +1,6 @@
-# Draft presubmission inquiry to *The Cerebellum*
+# Presubmission inquiry to *The Cerebellum*
 
-**Status:** draft for author review; not sent
+**Status:** submitted through the Springer Nature journal contact form on 19 August 2026; editorial reply pending
 
 **To:** Editors, *The Cerebellum*
 

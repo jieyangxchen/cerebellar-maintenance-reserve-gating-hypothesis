@@ -112,6 +112,7 @@ def _configure_style() -> None:
             "svg.fonttype": "none",
             "svg.hashsalt": "maintenance-reserve-gating-v0.1.0",
             "pdf.fonttype": 42,
+            "ps.fonttype": 42,
             "savefig.facecolor": "white",
         }
     )
@@ -137,6 +138,7 @@ def _box(
         linewidth=linewidth,
         edgecolor=edge,
         facecolor=fill,
+        zorder=2,
     )
     ax.add_patch(patch)
     ax.text(
@@ -147,6 +149,7 @@ def _box(
         va="center",
         fontsize=fontsize,
         linespacing=1.18,
+        zorder=3,
     )
 
 
@@ -172,6 +175,7 @@ def _arrow(
             connectionstyle=f"arc3,rad={curve}",
             shrinkA=2,
             shrinkB=2,
+            zorder=1,
         )
     )
 
@@ -217,6 +221,18 @@ def _save(fig: mpl.figure.Figure, output_dir: Path, stem: str) -> list[Path]:
             normalized = "\n".join(line.rstrip() for line in svg_text.splitlines()) + "\n"
             destination.write_text(normalized, encoding="utf-8", newline="\n")
         outputs.append(destination)
+    eps_name = {
+        "fig1-framework": "Fig1.eps",
+        "fig2-nonlinear-gating": "Fig2.eps",
+        "fig3-study-program": "Fig3.eps",
+    }[stem]
+    fig.savefig(
+        output_dir / eps_name,
+        format="eps",
+        bbox_inches="tight",
+        pad_inches=0.05,
+        metadata={"Creator": "cerebellar-maintenance-reserve-gating-hypothesis"},
+    )
     plt.close(fig)
     return outputs
 
@@ -526,10 +542,10 @@ def _figure_program(output_dir: Path) -> list[Path]:
         (0.56, 0.70),
         0.18,
         0.13,
-        "Nested models\nSCA3 H1 + external replication\nSCA6 transport + G×S*",
+        "Nested models\nSCA3 H1\n+ external replication\nSCA6 transport + G×S*",
         edge=COLORS["known"],
         fill=COLORS["known_fill"],
-        fontsize=6.7,
+        fontsize=5.9,
     )
     _box(
         ax,

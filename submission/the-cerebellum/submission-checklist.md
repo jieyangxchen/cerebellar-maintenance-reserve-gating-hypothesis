@@ -4,7 +4,7 @@
 
 ## 1. Presubmission decision
 
-- [ ] Send the [presubmission inquiry](presubmission-inquiry.md) before formal submission because the journal asks authors to contact the Editor about topic suitability.
+- [x] Send the [presubmission inquiry](presubmission-inquiry.md) before formal submission because the journal asks authors to contact the Editor about topic suitability. Submitted through the Springer Nature journal contact form on 19 August 2026; reply pending.
 - [ ] Ask the Editor to select between “new ideas, opinion and controversies” and “in-depth review.”
 - [ ] Disclose that the manuscript package is already public on GitHub. Springer Nature's general policy states that a preprint is not prior publication, but ask the journal to confirm that this particular GitHub manuscript/package and licence are acceptable for this article type.
 - [ ] Do not submit to another journal simultaneously.
@@ -12,7 +12,7 @@
 ## 2. Manuscript requirements already met in source
 
 - [x] Concise English title focused on modifier effects in hereditary cerebellar ataxia.
-- [x] Abstract is no more than 250 words (approximately 228 words under the repository tokenizer; recheck after Word conversion).
+- [x] Abstract is no more than 250 words (approximately 228 words under the repository tokenizer and 218 visible-word tokens after Word conversion).
 - [x] Six keywords are supplied.
 - [x] No more than three heading levels are used.
 - [x] Three original figures have captions and editable source.
@@ -33,12 +33,12 @@
 - [ ] Provide a private full postal correspondence address if the journal requires one. Do not add it to the public repository unless the author explicitly requests publication.
 - [ ] Confirm whether acknowledgements are needed.
 
-## 4. Submission files to prepare after editorial fit is confirmed
+## 4. Submission files prepared in advance while editorial fit is pending
 
-- [ ] Convert the accepted Markdown source to a Word manuscript using plain formatting, automatic page numbering, and editable equations.
-- [ ] Prepare a separate title page containing the author name, concise title, affiliation/address, corresponding email, author contribution, and any journal-requested declarations.
-- [ ] Prepare the covering letter and call attention to the hypothesis status, public repository history, and clinical-safety boundary.
-- [ ] Supply figure files at the requested resolution/format and confirm that all artwork is original.
+- [x] Convert the v0.2.1 Markdown source to a Word manuscript using plain formatting, automatic page numbering, and editable Word-equation objects. Rebuild after any source change.
+- [x] Prepare a separate title page containing the author name, concise title, public affiliation/location, corresponding email, author contribution, and declarations; the private postal correspondence address remains pending if required by the portal.
+- [x] Prepare the covering letter and call attention to the hypothesis status, public repository history, and clinical-safety boundary. Update the requested article category after the editor replies.
+- [x] Supply original figure files as high-resolution PNG plus editable/vector SVG, PDF, and EPS alternatives; confirm final upload choices in the portal.
 - [ ] Confirm the final manuscript word count; original reports and reviews are permitted up to 10,000 words, but the editor should confirm the applicable category.
 - [ ] Verify all hyperlinks and DOI metadata immediately before submission.
 - [ ] Recheck the live status and results posting for NCT05822908 immediately before submission.

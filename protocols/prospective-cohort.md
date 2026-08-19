@@ -213,7 +213,7 @@ When confirmation is unavailable, the adjudication committee applies frozen evid
 For a participant who converts between visits, the event age lies within:
 
 $$
-$(a_{\mathrm{last\ definite\ preataxic}},\ a_{\mathrm{first\ qualifying\ manifest}}]$.
+(a_{\text{last definite preataxic}},\ a_{\text{first qualifying manifest}}].
 $$
 
 The primary model uses the full interval. Midpoint imputation is prohibited.
