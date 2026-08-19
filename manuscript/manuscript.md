@@ -8,13 +8,17 @@
 
 **Author:** Jieyang Chen
 
-**Draft version:** 0.2.0, 18 August 2026
+**ORCID:** 0009-0001-9247-2085 ([profile](https://orcid.org/0009-0001-9247-2085))
 
-**Evidence cut-off:** 18 August 2026
+**Draft version:** 0.2.1, 19 August 2026
 
-**Affiliation:** Independent author (no institutional affiliation claimed)
+**Evidence cut-off:** 19 August 2026
+
+**Affiliation:** Independent Researcher, Hangzhou, China
 
 **Correspondence:** [278404704@qq.com](mailto:278404704@qq.com); public repository Issues are for non-sensitive discussion only.
+
+**Public repository:** [https://github.com/jieyangxchen/cerebellar-maintenance-reserve-gating-hypothesis](https://github.com/jieyangxchen/cerebellar-maintenance-reserve-gating-hypothesis)
 
 ## Abstract
 
@@ -230,6 +234,8 @@ NfL is elevated before manifest ataxia in SCA3 cohorts, including two multicentr
 
 A 2026 four-centre MRS study in 18 SCA2 participants, 25 SCA3 participants, and 29 controls found reproducible neurochemical differences over short retest intervals; estimates required site/vendor adjustment and differed by genotype [19]. It was not a presymptomatic longitudinal prediction study. MRS should therefore remain genotype-specific and generally secondary until responsiveness and clinical meaning are established.
 
+A 2026 Ataxia Global Initiative consensus statement provided disease-specific recommendations for quantitative MRI endpoints in SCA1, SCA2, and SCA3 and emphasized their potential role in participant selection and monitoring for early trials [26]. This strengthens the rationale for a harmonized imaging core, but a consensus recommendation does not make MRI a validated surrogate for clinical benefit.
+
 ### 5.6 Environmental evidence is exploratory
 
 An exploratory study of 188 SCA3/MJD participants from 109 families associated municipality-level rural proxies with approximately 1.8 years earlier residual age at onset [20]. The variables were 2010 ecological proxies—population density, rural population proportion, and untreated-well-water proportion—rather than individual lifetime exposures. They were correlated, median-dichotomized, and only marginally significant. The study did not measure $S$ or $X$, establish causality, or test a non-monotonic dose curve. It motivates better exposure measurement; it does not support the gating mechanism.
@@ -374,19 +380,19 @@ Not applicable. This article is a theoretical framework and critical review and 
 
 ### Author contribution
 
-Jieyang Chen conceived the framework, performed the literature organization and claim audit, designed the proposed research programme, prepared the figures and reproducibility materials, and drafted and revised the manuscript. This statement must be reconfirmed by the author before submission and updated if additional qualifying authors contribute.
+Jieyang Chen conceived the framework, performed the literature organization and claim audit, designed the proposed research programme, prepared the figures and reproducibility materials, and drafted and revised the manuscript.
 
 ### Funding
 
-Author confirmation is required before submission. The public repository does not document external funding, and no funding status is inferred here.
+This work received no external funding.
 
 ### Competing interests
 
-Author confirmation is required before submission. The public repository does not contain a final financial or non-financial competing-interest declaration.
+The author declares no competing interests. The author retains copyright in the associated public repository and may consider future commercial-licensing requests. No commercial funding or payment was received for this work.
 
 ### AI-assisted tools
 
-AI-assisted tools were used for literature organization, drafting and editing, code generation, and internal consistency checks. They are not authors. The named author remains responsible for source verification, scientific claims, analyses, disclosures, and any submitted version. Tool names, providers, model/version identifiers, and the exact scope of use must be completed in the journal submission disclosure after the author confirms the final workflow.
+OpenAI Codex was used as an AI-assisted tool for literature organization, drafting and language editing, code generation for figures and repository checks, and internal consistency review. It is not an author. The named author remains responsible for source verification, scientific claims, analyses, disclosures, and the submitted version.
 
 ## References
 
@@ -413,7 +419,8 @@ AI-assisted tools were used for literature organization, drafting and editing, c
 21. Benussi A, et al. [Cerebello-spinal tDCS in ataxia](https://pubmed.ncbi.nlm.nih.gov/30135258/). *Neurology*. 2018. doi:10.1212/WNL.0000000000006210.
 22. Maas RPPWM, et al. [Cerebellar tDCS in SCA3: randomized sham-controlled trial](https://pmc.ncbi.nlm.nih.gov/articles/PMC9059914/). *Neurotherapeutics*. 2022. doi:10.1007/s13311-022-01231-w.
 23. Hauser S, et al. [Allele-specific targeting of mutant ataxin-3 in SCA3 iPSC-derived neurons](https://pmc.ncbi.nlm.nih.gov/articles/PMC8649108/). *Mol Ther Nucleic Acids*. 2022. doi:10.1016/j.omtn.2021.11.015.
-24. ClinicalTrials.gov. [NCT05822908: VO659 in SCA1, SCA3 and Huntington disease](https://clinicaltrials.gov/study/NCT05822908). Status checked 18 August 2026.
+24. ClinicalTrials.gov. [NCT05822908: VO659 in SCA1, SCA3 and Huntington disease](https://clinicaltrials.gov/study/NCT05822908). Status checked 19 August 2026.
 25. Ishihara T, et al. [L-arginine in SCA6: multicentre randomized phase 2 trial](https://pmc.ncbi.nlm.nih.gov/articles/PMC11701440/). *eClinicalMedicine*. 2024. doi:10.1016/j.eclinm.2024.102952.
+26. Öz G, et al.; Ataxia Global Initiative Working Group on MRI Biomarkers. [MRI end-points for clinical trials in ataxias: recommendations from the Ataxia Global Initiative MRI Biomarkers Working Group](https://pubmed.ncbi.nlm.nih.gov/42236987/). *Nat Rev Neurol*. 2026;22:439–456. doi:10.1038/s41582-026-01218-7.
 
 The complete machine-readable bibliography is in [references.bib](references.bib).

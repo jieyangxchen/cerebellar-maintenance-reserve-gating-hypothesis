@@ -2,12 +2,14 @@ cff-version: 1.2.0
 message: "If you use this hypothesis framework, protocol, code, or figures, please cite this repository."
 title: "A Maintenance–Reserve–Gating Framework for Modifier Effects in Hereditary Cerebellar Ataxia"
 type: software
-version: 0.2.0
-date-released: 2026-08-18
+version: 0.2.1
+date-released: 2026-08-19
 authors:
   - family-names: Chen
     given-names: Jieyang
     email: 278404704@qq.com
+    affiliation: "Independent Researcher, Hangzhou, China"
+    orcid: "https://orcid.org/0009-0001-9247-2085"
 repository-code: "https://github.com/jieyangxchen/cerebellar-maintenance-reserve-gating-hypothesis"
 url: "https://github.com/jieyangxchen/cerebellar-maintenance-reserve-gating-hypothesis"
 license: CC-BY-NC-4.0

@@ -3,9 +3,9 @@
 [![Status: hypothesis and protocol](https://img.shields.io/badge/status-hypothesis%20%2B%20protocol-B96B25)](#scientific-status)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-287D61)](LICENSE)
 [![Target: The Cerebellum](https://img.shields.io/badge/target-The%20Cerebellum-6A4C93)](submission/the-cerebellum/submission-checklist.md)
-[![Evidence cut-off](https://img.shields.io/badge/evidence%20cut--off-2026--08--18-2F5D8A)](evidence/evidence-audit.md)
+[![Evidence cut-off](https://img.shields.io/badge/evidence%20cut--off-2026--08--19-2F5D8A)](evidence/evidence-audit.md)
 
-A public, submission-oriented new-ideas/in-depth-review package for testing whether modifier effects in hereditary cerebellar ataxia can include a mismatch between genetic demand, externally conditioned system activation, and finite homeostatic reserve. Version 0.2.0 is tailored for a presubmission inquiry to *The Cerebellum*; it has not been submitted, peer reviewed, or accepted.
+A public, submission-oriented new-ideas/in-depth-review package for testing whether modifier effects in hereditary cerebellar ataxia can include a mismatch between genetic demand, externally conditioned system activation, and finite homeostatic reserve. Version 0.2.1 is the author-confirmed v0.2 submission candidate tailored for a presubmission inquiry to *The Cerebellum*; it has not been submitted, peer reviewed, or accepted.
 
 The central discipline of this repository is simple: **the derived exposure score $S$ is not the unknown biological input $X$; $X$, the gate, outward leak, reserve state, and hump-shaped human risk curve are hypotheses—not discoveries.** The package turns them into prespecified predictions that can fail, while keeping clinical intervention focused on known, measurable biology.
 
@@ -118,7 +118,7 @@ Residential histories and genetic-carrier data are sensitive. Any real cohort mu
 
 ## Versioning, citation, and license
 
-The evidence cut-off for version 0.2.0 is **18 August 2026**. Current trial status is timestamped rather than assumed to remain current.
+The evidence cut-off for version 0.2.1 is **19 August 2026**. Current trial status is timestamped rather than assumed to remain current. Version history is recorded in [CHANGELOG.md](CHANGELOG.md).
 
 Please cite using [CITATION.cff](CITATION.cff). Text, protocols, original figures, and code are released under [CC BY-NC 4.0](LICENSE): personal use and non-commercial research, teaching, sharing, and adaptation are permitted with attribution; commercial use requires separate permission from the copyright holder. Third-party papers and linked materials retain their original copyright.
 

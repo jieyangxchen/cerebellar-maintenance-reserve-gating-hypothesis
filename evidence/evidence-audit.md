@@ -1,7 +1,7 @@
 # Evidence Audit for the Maintenance–Reserve–Gating Framework
 
-**Audit date:** 18 August 2026
-**Scope:** Core empirical statements, all 25 numbered references in the current manuscript, and additional primary or consensus sources retained to support or qualify related statements in the evidence package.
+**Audit date:** 19 August 2026
+**Scope:** Core empirical statements, all 26 numbered references in the current manuscript, and additional primary or consensus sources retained to support or qualify related statements in the evidence package.
 **Source policy:** Primary research articles, the two explicitly labelled cerebellar-reserve consensus/concept papers, PubMed/PubMed Central, publisher records, and the official ClinicalTrials.gov record were used. No secondary news coverage was used as evidence.
 
 ## 1. Purpose and interpretation
@@ -15,6 +15,8 @@ This appendix separates three questions that must not be conflated:
 The answer to the third question is currently **no**. The literature supports established concepts of structural and functional cerebellar reserve and several premises that motivate the new extension—age-at-onset heterogeneity, exploratory environmental associations, multicellular pathology, early circuit dysfunction, stage-dependent reversibility in animal models, and candidate early biomarkers. It does not directly demonstrate a single external maintenance input, the proposed dynamic reserve flux, a genetically determined coupling capacity, an exposure-gated exchange channel, a shared latent state, reverse resource leakage, or non-monotonic exposure risk.
 
 No audited research article was flagged as retracted in the checked PubMed or publisher records as of the audit date.
+
+The 19 August refresh rechecked the official NCT05822908 registry record and added the 2026 Ataxia Global Initiative MRI endpoint consensus. The registry still listed the trial as recruiting and contained no results section. This targeted refresh does not convert the audit into a systematic review.
 
 ## 2. Claim-tier rules
 
@@ -182,6 +184,13 @@ The tiers describe what language the evidence permits; they are not journal pres
 **Finding:** The editorial proposes “Time Is Cerebellum,” emphasizing treatment while cerebellar reserve remains and before advanced cell loss.
 **Required wording:** This source supports the priority of early intervention as a clinical principle. It does not establish reversibility in hereditary SCA, a specific intervention, or the maintenance–reserve–gating mechanism.
 [PMC full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC6007694/) — DOI: [10.1007/s12311-018-0925-6](https://doi.org/10.1007/s12311-018-0925-6)
+
+### `oz2026mri` — Ataxia Global Initiative MRI endpoint recommendations
+
+**Verdict:** confirmed conceptual consensus, C1.
+**Finding:** The Ataxia Global Initiative MRI Biomarkers Working Group reviewed quantitative MRI candidates and issued disease-specific recommendations for SCA1, SCA2, SCA3, and Friedreich ataxia clinical trials. The statement supports harmonized, disease-specific MRI acquisition and analysis for participant selection and longitudinal monitoring.
+**Required wording:** “The consensus supports disease-specific quantitative MRI endpoints as candidate trial tools.” It does not validate MRI as a surrogate for clinical benefit, establish the proposed latent state $L(t)$, or demonstrate dynamic reserve $B(t)$.
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/42236987/) — DOI: [10.1038/s41582-026-01218-7](https://doi.org/10.1038/s41582-026-01218-7)
 
 ### `meyer2026` — APOE ε4 modifier claim
 

@@ -14,11 +14,11 @@ The manuscript proposes a falsifiable framework for timing heterogeneity in here
 
 The manuscript uses SCA3 as the primary proposed test bed and SCA6 as a deliberately difficult transport and heterogeneity test. It includes three original mechanism/study-design figures, layer-specific falsification rules, an evidence audit, and linked prospective cohort and early-intervention protocol concepts. The intervention examples concern known molecular or circuit targets and are not presented as tests of the unknown input or as treatment recommendations.
 
-The current manuscript is approximately 5,500 words excluding references, contains an approximately 228-word abstract, 6 keywords, 3 figures, and 25 references. It reports no participant-level data or new human or animal experiments. The exact Word-processor count will be confirmed in the submission file.
+The current manuscript is approximately 5,500 words excluding references, contains an approximately 228-word abstract, 6 keywords, 3 figures, and 26 references. It reports no participant-level data or new human or animal experiments. The exact Word-processor count will be confirmed in the submission file.
 
 A version of the manuscript package has been publicly available in a non-commercially licensed GitHub repository: <https://github.com/jieyangxchen/cerebellar-maintenance-reserve-gating-hypothesis>. Before formal submission, I would be grateful for confirmation that this public manuscript/repository history is compatible with the journal's prior-publication and preprint policies, and for advice on the most appropriate article category.
 
-If the topic is potentially suitable, I will prepare the manuscript in Word and complete all title-page, affiliation/address, funding, competing-interest, authorship, AI-assistance, and other disclosures required by the journal before submission.
+The current version includes my confirmed public affiliation, ORCID, funding statement, competing-interest statement, authorship contribution, and AI-assistance disclosure. If the topic is potentially suitable, I will prepare the manuscript in Word and complete any private correspondence-address and portal fields required by the journal before submission.
 
 Thank you for considering this inquiry.
 
@@ -26,8 +26,8 @@ Sincerely,
 
 Jieyang Chen
 
-Independent author
+Independent Researcher, Hangzhou, China
 
 Email: 278404704@qq.com
 
-ORCID: [AUTHOR TO INSERT OR REMOVE]
+ORCID: 0009-0001-9247-2085 ([profile](https://orcid.org/0009-0001-9247-2085))

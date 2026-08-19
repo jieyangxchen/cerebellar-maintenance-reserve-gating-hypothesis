@@ -1,6 +1,6 @@
 # *The Cerebellum* submission checklist
 
-**Status:** working checklist for version 0.2.0; requirements checked against the journal website on 18 August 2026.
+**Status:** working checklist for version 0.2.1; requirements rechecked against the journal website on 19 August 2026.
 
 ## 1. Presubmission decision
 
@@ -20,16 +20,17 @@
 - [x] The manuscript reports no participant-level research and states that ethics approval and consent are not applicable.
 - [x] Data/code availability and author-contribution sections are present.
 
-## 3. Author-supplied items still required
+## 3. Author and disclosure items
 
-- [ ] Confirm the author's published name and exact spelling.
-- [ ] Add a valid affiliation and full postal address. If “independent author” is retained, confirm with the journal how the address should appear; do not invent an institution.
-- [ ] Confirm the corresponding-author email: 278404704@qq.com.
-- [ ] Add ORCID, or remove the placeholder if none will be used.
-- [ ] Confirm and replace the provisional funding text with a final factual statement.
-- [ ] Confirm and replace the provisional competing-interest text with a final factual financial and non-financial disclosure.
-- [ ] Confirm the author-contribution statement and update it if additional qualifying authors join.
-- [ ] Complete the AI-assistance disclosure with tool names, providers, model/version identifiers, and exact uses accepted by the journal's current policy.
+- [x] Author name in the current source: Jieyang Chen.
+- [x] Public affiliation: Independent Researcher, Hangzhou, China.
+- [x] Corresponding-author email: 278404704@qq.com.
+- [x] ORCID: 0009-0001-9247-2085.
+- [x] Funding statement: no external funding.
+- [x] Competing-interest statement: no competing interests; repository copyright, possible future commercial licensing, and absence of commercial funding/payment are disclosed.
+- [x] Author-contribution statement is included for the sole named author; update it if additional qualifying authors join.
+- [x] AI-assistance disclosure identifies OpenAI Codex and its uses; recheck the journal portal for any additional model/version field at submission.
+- [ ] Provide a private full postal correspondence address if the journal requires one. Do not add it to the public repository unless the author explicitly requests publication.
 - [ ] Confirm whether acknowledgements are needed.
 
 ## 4. Submission files to prepare after editorial fit is confirmed
