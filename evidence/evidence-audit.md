@@ -12,7 +12,7 @@ This appendix separates three questions that must not be conflated:
 2. Does the cited study support the local factual statement made in the manuscript?
 3. Does the study support the proposed unified variables $X$, $R$, $B$, $P$, or $L$, the outward-leak mechanism, or a hump-shaped exposure-risk curve?
 
-The answer to the third question is currently **no**. The literature supports established concepts of structural and functional cerebellar reserve and several premises that motivate the new extension—age-at-onset heterogeneity, exploratory environmental associations, multicellular pathology, early circuit dysfunction, stage-dependent reversibility in animal models, and candidate early biomarkers. It does not directly demonstrate a single external maintenance input, the proposed dynamic reserve flux, a genetically determined coupling capacity, an exposure-gated exchange channel, a shared latent state, reverse resource leakage, or non-monotonic exposure risk.
+The answer to the third question is currently **no**. The literature supports established concepts of structural and functional cerebellar reserve and several premises that motivate the new extension—age-at-onset heterogeneity, exploratory environmental associations, multicellular pathology, early circuit dysfunction, stage-dependent reversibility in animal models, and candidate early biomarkers. It does not directly demonstrate a single external maintenance input, the proposed dynamic reserve flux, a genetically determined coupling capacity, an exposure-gated exchange channel, a shared latent state, outward resource loss, or non-monotonic exposure risk.
 
 No audited research article was flagged as retracted in the checked PubMed or publisher records as of the audit date.
 
@@ -175,7 +175,7 @@ The tiers describe what language the evidence permits; they are not journal pres
 
 **Verdict:** confirmed conceptual prior art, C1.
 **Finding:** The consensus paper defines cerebellar reserve as the capacity to compensate and restore function in response to pathology, distinguishes structural and functional reserve, and discusses plasticity and environmental enrichment. It provides the required prior framework for any new use of “reserve” in a cerebellar hypothesis.
-**Required wording:** “The proposed dynamic reserve $B(t)$ is nested within but not equivalent to established structural and functional cerebellar reserve.” The consensus does not measure $B(t)$, $X$, gating, outward leakage, or a human exposure-risk hump.
+**Required wording:** “The proposed dynamic reserve $B(t)$ is nested within but not equivalent to established structural and functional cerebellar reserve.” The consensus does not measure $B(t)$, $X$, gating, outward loss, or a human exposure-risk hump.
 [PMC full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC6978293/) — DOI: [10.1007/s12311-019-01091-9](https://doi.org/10.1007/s12311-019-01091-9)
 
 ### `mitoma2018time` — early-intervention principle
@@ -246,7 +246,7 @@ The following must be labelled as theoretical constructs throughout the title, a
 - initial or effective reserve $B_0$ / $B$;
 - environmental exchange gate $P$;
 - shared latent system state $L$;
-- outward leakage after gate opening;
+- outward loss after gate opening;
 - low-$X$ dormancy as a protective state;
 - a hump-shaped or multimodal exposure-risk curve.
 
@@ -292,6 +292,6 @@ The manuscript must distinguish trial existence from therapeutic efficacy:
 
 A submission-safe summary is:
 
-> Current evidence supports several premises of the framework—substantial residual age-at-onset heterogeneity and candidate preataxic biomarkers in selected human cohorts, exploratory environmental associations, and multicellular contributions, early circuit/homeostatic abnormalities, or stage-dependent reversibility in selected animal or cellular models. No study yet directly demonstrates a single external maintenance factor, the proposed reserve and gating variables, outward resource leakage, or a non-monotonic exposure-risk function. These elements are therefore explicit, falsifiable theoretical constructs rather than established disease mechanisms.
+> Current evidence supports several premises of the framework—substantial residual age-at-onset heterogeneity and candidate preataxic biomarkers in selected human cohorts, exploratory environmental associations, and multicellular contributions, early circuit/homeostatic abnormalities, or stage-dependent reversibility in selected animal or cellular models. No study yet directly demonstrates a single external maintenance factor, the proposed reserve and gating variables, outward resource loss, or a non-monotonic exposure-risk function. These elements are therefore explicit, falsifiable theoretical constructs rather than established disease mechanisms.
 
 The accompanying [`evidence-matrix.tsv`](evidence-matrix.tsv) provides the machine-readable claim-level audit.

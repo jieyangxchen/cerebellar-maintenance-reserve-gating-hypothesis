@@ -7,8 +7,10 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 import numpy as np
+import figures.src.make_figures as figure_module
 import scripts.validate_repository as repository_validation
 
 from analysis.sample_size_scenarios import (
@@ -185,6 +187,77 @@ class GatingModelTests(unittest.TestCase):
             self.assertIn("SCA3 primary test bed", svg)
             self.assertIn("SCA6 transport test", svg)
             self.assertIn("Known-target examples", svg)
+
+    def test_figure_files_do_not_repeat_caption_titles_inside_artwork(self) -> None:
+        titles = {
+            "fig1-framework.svg": "A nested, falsifiable maintenance–reserve–gating model",
+            "fig2-nonlinear-gating.svg": (
+                "Predicted non-monotonic input response under one illustrative parameter set"
+            ),
+            "fig3-study-program.svg": (
+                "Prospective validation and gated early-intervention programme"
+            ),
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            generate_all(Path(tmp))
+            for filename, title in titles.items():
+                svg = (Path(tmp) / filename).read_text(encoding="utf-8")
+                self.assertNotIn(title, svg)
+
+    def test_figure_one_keeps_visible_gutters_between_connected_boxes(self) -> None:
+        captured: dict[str, object] = {}
+
+        def retain_figure(fig, _output_dir, _stem):
+            captured["figure"] = fig
+            return []
+
+        with patch.object(figure_module, "_save", side_effect=retain_figure):
+            figure_module._figure_framework(Path("unused"))
+
+        fig = captured["figure"]
+        fig.canvas.draw()
+        renderer = fig.canvas.get_renderer()
+        boxes = [
+            artist
+            for artist in fig.axes[0].patches
+            if artist.__class__.__name__ == "FancyBboxPatch"
+        ]
+        named = dict(
+            zip(
+                (
+                    "genotype",
+                    "known_pressure",
+                    "measured",
+                    "candidate_score",
+                    "baseline_reserve",
+                    "bridge",
+                    "coupling",
+                    "reserve",
+                    "candidate_factor",
+                    "network",
+                    "dysfunction",
+                ),
+                boxes,
+                strict=True,
+            )
+        )
+
+        minimum_gutter_px = 6.0
+        for left_name, right_name in (
+            ("candidate_score", "bridge"),
+            ("bridge", "coupling"),
+            ("network", "dysfunction"),
+        ):
+            left = named[left_name].get_window_extent(renderer)
+            right = named[right_name].get_window_extent(renderer)
+            gutter = right.x0 - left.x1
+            self.assertGreaterEqual(
+                gutter,
+                minimum_gutter_px,
+                msg=f"{left_name} -> {right_name} gutter is only {gutter:.1f}px",
+            )
+
+        figure_module.plt.close(fig)
 
 
 class RepositoryValidationTests(unittest.TestCase):

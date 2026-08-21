@@ -25,7 +25,7 @@ This protocol does not assume that an unknown external maintenance factor has be
 | Key secondary outcomes | SARA trajectory, plasma NfL, genotype-specific MRI, MRS, eye movements, digital gait, FARS-ADL, PROM-Ataxia, and patient-important milestones |
 | Primary analysis | Delayed-entry, interval-censored, genotype-stratified flexible survival model with a frozen restricted cubic spline for `S*` |
 | Hidden-state analysis | A longitudinal latent biomarker state `L(t)` derived without SARA and validated outside its development geography |
-| Decision rule | H1/H2 can support only the frozen non-linear environment model; gate/leak language additionally requires independent activation, uptake/exchange, reserve-proxy, temporal-mediation, and perturbation evidence |
+| Decision rule | H1/H2 can support only the frozen non-linear environment model; gate/loss language additionally requires independent activation, uptake/exchange, reserve-proxy, temporal-mediation, and perturbation evidence |
 
 ## 1. Rationale
 
@@ -305,12 +305,12 @@ The confirmatory environmental analysis is **no-go** if the exposure-quality gat
 
 ### 11.2 Statistical gate
 
-- **Full statistical go for the non-linear environment model:** H1 survives Holm correction with the prespecified direction and supported exposure range; H2 is directionally interpretable and survives its Holm threshold; the curve transports to an external cohort without moving the risk region post hoc. This is not a gate/leak finding.
+- **Full statistical go for the non-linear environment model:** H1 survives Holm correction with the prespecified direction and supported exposure range; H2 is directionally interpretable and survives its Holm threshold; the curve transports to an external cohort without moving the risk region post hoc. This is not a gate/loss finding.
 - **Partial support:** H1 is supported but H2 is imprecise because the event target is not reached. The result supports a candidate non-monotonic association, not the full genotype-coupled model.
 - **Candidate-specific no-go:** H1 is not supported and its confidence interval excludes the prespecified minimally relevant intermediate excess, or the external cohort fails to reproduce the shape. This rejects the registered `E*/S*` implementation in the measured range; it does not identify or exclude every possible `X`.
 - **Indeterminate:** confidence intervals remain compatible with both no effect and the minimally relevant effect. This is reported as underpowered, not as confirmation or falsification.
 
-No H1/H2 outcome, including a transported hump and interaction, establishes $P$, $B$, uptake, or leakage. A future mechanistic claim requires independent activation, uptake/exchange, and reserve/depletion measurements with the prespecified temporal sequence, followed by selective perturbation and mediation tests.
+No H1/H2 outcome, including a transported hump and interaction, establishes $P$, $B$, uptake, or outward loss. A future mechanistic claim requires independent activation, uptake/exchange, and reserve/depletion measurements with the prespecified temporal sequence, followed by selective perturbation and mediation tests.
 
 ### 11.3 Biomarker-state gate
 

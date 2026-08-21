@@ -1,6 +1,14 @@
 # Presubmission inquiry to *The Cerebellum*
 
-**Status:** submitted through the Springer Nature journal contact form on 19 August 2026; editorial reply pending
+**Status:** submitted through the Springer Nature journal contact form on 19 August 2026; Publishing Support response reviewed on 20 August 2026
+
+## Response disposition
+
+Springer Nature Publishing Support advised submitting the manuscript through the journal's formal submission system so that the Editor-in-Chief can assess suitability during initial screening. The support team did not perform a presubmission academic assessment, select between the proposed article categories, or determine whether this specific public GitHub history and CC BY-NC 4.0 licence are acceptable under the journal's policies.
+
+The formal-submission candidate therefore uses “new ideas, opinion and controversies” as the requested category, while allowing editorial reclassification. The public repository is disclosed transparently in the cover letter and submission record without claiming prior approval. The full support correspondence and ticket identifier are retained privately by the author and are intentionally not reproduced in this public repository.
+
+## Inquiry sent
 
 **To:** Editors, *The Cerebellum*
 

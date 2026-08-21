@@ -35,9 +35,10 @@ AFFILIATION = "Independent Researcher, Hangzhou, China"
 EMAIL = "278404704@qq.com"
 ORCID = "0009-0001-9247-2085"
 REPOSITORY = "https://github.com/jieyangxchen/cerebellar-maintenance-reserve-gating-hypothesis"
-VERSION = "0.2.1"
+VERSION = "0.2.3"
+PACKAGE_DATE = "21 August 2026"
 EVIDENCE_CUTOFF = "19 August 2026"
-FIXED_TIME = datetime(2026, 8, 19, 0, 0, 0, tzinfo=timezone.utc)
+FIXED_TIME = datetime(2026, 8, 21, 0, 0, 0, tzinfo=timezone.utc)
 
 MAIN_DOCX = PACKAGE_DIR / "01_Main_Manuscript.docx"
 TITLE_DOCX = PACKAGE_DIR / "02_Title_Page.docx"
@@ -227,7 +228,10 @@ def _configure_document(doc: Document, *, title: str, subject: str, header_text:
     doc.core_properties.last_modified_by = AUTHOR
     doc.core_properties.created = FIXED_TIME
     doc.core_properties.modified = FIXED_TIME
-    doc.core_properties.keywords = "spinocerebellar ataxia; cerebellar reserve; phenoconversion; biomarkers"
+    doc.core_properties.keywords = (
+        "Spinocerebellar Ataxias; Cerebellum; Environmental Exposure; "
+        "Disease Progression; Biomarkers; Genetic Predisposition to Disease"
+    )
 
     header = section.header.paragraphs[0]
     header.alignment = WD_ALIGN_PARAGRAPH.LEFT
@@ -647,7 +651,7 @@ def _add_markdown(
             _add_inline_runs(paragraph, heading_match.group(2), size={1: 12, 2: 11, 3: 10}[level], default_bold=True)
             index += 1
             continue
-        if stripped.startswith("**Figure "):
+        if stripped.startswith(("**Figure ", "**Fig. ")):
             paragraph = doc.add_paragraph(style="Caption")
             _add_inline_runs(paragraph, stripped, size=9)
             index += 1
@@ -724,7 +728,7 @@ def build_main_manuscript() -> Document:
     source = MANUSCRIPT.read_text(encoding="utf-8")
     abstract, keywords, body = _extract_main_sections(source)
     doc = Document()
-    _configure_document(doc, title=TITLE, subject="Hypothesis and critical review", header_text=RUNNING_TITLE)
+    _configure_document(doc, title=TITLE, subject="New ideas, opinion and controversies", header_text=RUNNING_TITLE)
     _add_main_title_page(doc)
     heading = doc.add_paragraph(style="Heading 1")
     heading.add_run("Abstract")
@@ -753,7 +757,8 @@ def build_title_page() -> Document:
 
     entries = (
         ("Running title", RUNNING_TITLE),
-        ("Article status", "Theoretical framework and critical review; no original participant-level or animal research"),
+        ("Proposed article type", "New ideas, opinion and controversies"),
+        ("Research status", "Theoretical framework and critical review; no original participant-level or animal research"),
         ("Manuscript version", VERSION),
         ("Evidence cut-off", EVIDENCE_CUTOFF),
         ("Public repository", REPOSITORY),
@@ -766,6 +771,7 @@ def build_title_page() -> Document:
             "Author contribution",
             "Jieyang Chen conceived the framework, performed the literature organization and claim audit, designed the proposed research programme, prepared the figures and reproducibility materials, and drafted and revised the manuscript.",
         ),
+        ("Acknowledgements", "None."),
         (
             "AI-assisted tools",
             "OpenAI Codex assisted with literature organization, drafting and language editing, figure and repository-check code, and internal consistency review. It is not an author; the named author remains responsible for the submitted work.",
@@ -776,23 +782,14 @@ def build_title_page() -> Document:
         label = paragraph.add_run(f"{label_text}: ")
         _set_run_font(label, size=10, bold=True)
         _add_inline_runs(paragraph, value, size=10)
-    note = doc.add_paragraph()
-    note.paragraph_format.space_before = Pt(8)
-    run = note.add_run("Private portal note: enter a full postal correspondence address if the journal system makes it mandatory; it is intentionally not included in the public repository package.")
-    _set_run_font(run, size=9, italic=True, color="555555")
     return doc
 
 
 def build_cover_letter() -> Document:
     doc = Document()
-    _configure_document(doc, title=f"Cover letter - {TITLE}", subject="Draft cover letter to The Cerebellum", header_text="Cover letter | The Cerebellum")
-    warning = doc.add_paragraph()
-    warning.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    warning.paragraph_format.space_after = Pt(12)
-    run = warning.add_run("DRAFT FOR AUTHOR REVIEW - align the article category with the presubmission reply before formal submission")
-    _set_run_font(run, size=9, bold=True, color="9C3F50")
+    _configure_document(doc, title=f"Cover letter - {TITLE}", subject="Cover letter to The Cerebellum", header_text="Cover letter | The Cerebellum")
 
-    for line in (EVIDENCE_CUTOFF, "Editor-in-Chief and Editors", "The Cerebellum"):
+    for line in (PACKAGE_DATE, "Editor-in-Chief and Editors", "The Cerebellum"):
         paragraph = doc.add_paragraph()
         paragraph.paragraph_format.space_after = Pt(2)
         _add_inline_runs(paragraph, line, size=10)
@@ -801,12 +798,12 @@ def build_cover_letter() -> Document:
     _add_inline_runs(salutation, "Dear Professor Manto and Editors,", size=10)
 
     paragraphs = (
-        f"I am preparing to submit the manuscript entitled “{TITLE}” for consideration as a “new ideas, opinion and controversies” article or, if the editors consider it more appropriate, an in-depth review. A presubmission inquiry asking for article-category and public-repository guidance was sent through the Springer Nature journal contact form on 19 August 2026.",
+        f"I am submitting the manuscript entitled “{TITLE}” for consideration as a “new ideas, opinion and controversies” article. Following a presubmission inquiry, Springer Nature Publishing Support advised formal submission so that the Editor-in-Chief can assess suitability during initial screening; the support response did not select an article category, and I would welcome editorial reclassification if appropriate.",
         "The manuscript proposes a nested and falsifiable framework for timing heterogeneity in hereditary cerebellar ataxias. Its observable layer tests a prospectively frozen measured exposure score for non-linear, genotype-specific associations with phenoconversion and biomarker trajectories. Its mechanistic extension involving an unknown input, activation/exchange gating, and dynamic reserve is explicitly identified as conjecture and requires independent mediator and perturbation evidence. A statistical hump alone is not presented as evidence for gating.",
         "The work builds directly on established structural and functional concepts of cerebellar reserve and states its narrower novelty as the activation-supply mismatch prediction, the observation model linking dynamic reserve to phenoconversion, and layer-specific rejection rules. SCA3 is proposed as the primary test bed and SCA6 as a stringent transport and heterogeneity test. Known-target early-intervention examples are separated from validation of the unknown-input mechanism and are not treatment recommendations.",
         "The article reports no participant-level data and no new human or animal experiments. It contains three original, programmatically generated figures. Detailed cohort, statistical-analysis, and early-intervention protocol concepts are supplied as supporting research-planning material and are explicitly not clinical protocols ready for implementation.",
-        f"The manuscript and supporting package have been publicly available in a CC BY-NC 4.0 GitHub repository ({REPOSITORY}). This history is disclosed transparently for assessment under the journal's prior-publication and preprint policies. The work is not under consideration by another journal.",
-        "No external funding was received. The author declares no competing interests; the repository copyright and possibility of considering future commercial-licensing requests are disclosed in the manuscript. AI-assisted use of OpenAI Codex is also disclosed, and the named author retains full responsibility for source verification, scientific claims, and the submitted version.",
+        f"The manuscript and supporting package have been publicly available in a CC BY-NC 4.0 GitHub repository ({REPOSITORY}). This history is disclosed transparently for assessment under the journal's prior-publication and preprint policies. The Publishing Support response did not make a journal-specific policy determination, so no prior approval is claimed.",
+        "The manuscript is not under consideration by another journal. No acknowledgements are required. No external funding was received. The author declares no competing interests; the repository copyright and possibility of considering future commercial-licensing requests are disclosed in the manuscript. AI-assisted use of OpenAI Codex is also disclosed, and the named author retains full responsibility for source verification, scientific claims, and the submitted version.",
         "Thank you for considering the manuscript.",
     )
     for text in paragraphs:
@@ -826,10 +823,15 @@ def build_cover_letter() -> Document:
 
 def build_supplement() -> Document:
     doc = Document()
-    _configure_document(doc, title=f"Supplementary protocols - {TITLE}", subject="Research-planning protocols and SAP", header_text="Supplementary protocols | Maintenance–reserve–gating framework")
+    _configure_document(
+        doc,
+        title=f"Supplementary Material 1 - {TITLE}",
+        subject="Research-planning protocols and SAP",
+        header_text="Supplementary Material 1 | Maintenance–reserve–gating framework",
+    )
     paragraph = doc.add_paragraph(style="Title")
     paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    _add_inline_runs(paragraph, "Supplementary Methods and Protocol Concepts", size=14, default_bold=True)
+    _add_inline_runs(paragraph, "Supplementary Material 1: Methods and Protocol Concepts", size=14, default_bold=True)
     _add_centered(doc, TITLE, size=11, italic=True, after=4)
     _add_centered(doc, f"Version {VERSION} | Evidence cut-off {EVIDENCE_CUTOFF}", size=9.5, after=10)
 

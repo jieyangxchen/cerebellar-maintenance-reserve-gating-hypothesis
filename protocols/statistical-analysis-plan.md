@@ -353,7 +353,7 @@ Prediction models are distinct from the primary etiologic model:
 
 Optimism is estimated by bootstrap in development and internal-external cross-validation by site. Final coefficients are frozen before the external cohort is opened. External validation reports calibration-in-the-large, calibration slope, Brier score, AUC, and genotype-specific performance. Intercept or baseline-hazard recalibration, if performed, is reported separately from the unrecalibrated result. Moving knots, redefining the middle region, or refitting `L` loadings is not allowed in the primary external test.
 
-The non-linear environment model is not considered transported merely because `M2` has a lower development-sample AIC. It must improve external calibration or prediction and reproduce the direction and approximate location of the prespecified risk region. Even successful transport does not identify a gate, uptake, leakage, or reserve mechanism.
+The non-linear environment model is not considered transported merely because `M2` has a lower development-sample AIC. It must improve external calibration or prediction and reproduce the direction and approximate location of the prespecified risk region. Even successful transport does not identify a gate, uptake, outward loss, or reserve mechanism.
 
 ## 14. Sample size and power
 
@@ -430,7 +430,7 @@ A common `L(t)` proceeds to external prognostic evaluation only if the frozen fa
 
 ### 16.4 Mechanistic and trial boundary
 
-Even full statistical go does not establish uptake, leakage, reserve depletion, or reversible treatment response. A gate-specific mechanistic programme must independently measure activation, inward uptake/exchange, and a reserve/depletion proxy; demonstrate the prespecified temporal sequence from intermediate `S*` through those mediators to later biomarker change; and reproduce a selective perturbation effect with negative controls. Advancement to an interventional protocol requires an independently known human-safe biological target, prospective evidence that the selected abnormal state precedes degeneration, and separate regulatory and ethics review.
+Even full statistical go does not establish uptake, outward loss, reserve depletion, or reversible treatment response. A gate-specific mechanistic programme must independently measure activation, inward uptake/exchange, and a reserve/depletion proxy; demonstrate the prespecified temporal sequence from intermediate `S*` through those mediators to later biomarker change; and reproduce a selective perturbation effect with negative controls. Advancement to an interventional protocol requires an independently known human-safe biological target, prospective evidence that the selected abnormal state precedes degeneration, and separate regulatory and ethics review.
 
 ## 17. Reporting
 

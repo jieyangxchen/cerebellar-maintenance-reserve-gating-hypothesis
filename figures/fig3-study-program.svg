@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="467.822281pt" height="309.348pt" viewBox="0 0 467.822281 309.348" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="491.755594pt" height="309.348pt" viewBox="0 0 491.755594 309.348" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -21,8 +21,8 @@
  <g id="figure_1">
   <g id="patch_1">
    <path d="M 0 309.348
-L 467.822281 309.348
-L 467.822281 -0
+L 491.755594 309.348
+L 491.755594 -0
 L 0 -0
 z
 " style="fill: #ffffff"/>
@@ -195,68 +195,68 @@ L 432.144 260.4258
 " clip-path="url(#p6d719a2d50)" style="fill: none; stroke: #d8e0e7; stroke-linecap: square"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #162536" x="8.064" y="22.533461" transform="rotate(-0 8.064 22.533461)">Prospective validation and gated early-intervention programme</text>
+    <text style="font-size: 7.2px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(32.902313 71.11701)">5-y natural history</text>
+    <text style="font-size: 7.2px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(25.323187 79.61301)">SCA3 primary test bed</text>
+    <text style="font-size: 7.2px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(12.853687 88.024635)">SCA6 transport test | controls</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(36.129477 71.749854)">5-y natural history</text>
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(29.287211 79.419854)">SCA3 primary test bed</text>
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(18.030023 87.013682)">SCA6 transport test | controls</text>
+    <text style="font-size: 7.4px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(154.213438 68.631593)">Locked E* → S*</text>
+    <text style="font-size: 7.4px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(144.74375 77.363593)">window + h + knots</text>
+    <text style="font-size: 7.4px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(145.707484 85.378718)">frozen pre-outcome</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 6.8px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(156.479375 69.115905)">Locked E* → S*</text>
-    <text style="font-size: 6.8px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(147.7775 77.139905)">window + h + knots</text>
-    <text style="font-size: 6.8px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(148.663094 84.505155)">frozen pre-outcome</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(269.078578 65.383343)">Nested models</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(279.373547 73.113077)">SCA3 H1</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(257.916844 80.319968)">+ external replication</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(254.777203 88.049702)">SCA6 transport + G×S*</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 5.9px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(271.696305 66.361374)">Nested models</text>
-    <text style="font-size: 5.9px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(280.899383 73.271288)">SCA3 H1</text>
-    <text style="font-size: 5.9px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(261.718391 79.713811)">+ external replication</text>
-    <text style="font-size: 5.9px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(258.911742 86.623725)">SCA6 transport + G×S*</text>
+    <text style="font-size: 6.2px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(373.59275 67.452958)">Statistical result</text>
+    <text style="font-size: 6.2px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(365.953672 74.168333)">G×S* + non-linearity</text>
+    <text style="font-size: 6.2px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(376.567297 81.484333)">not gate proof</text>
+    <text style="font-size: 6.2px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(363.751703 88.800333)">not outward-loss proof</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 5.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(376.423375 68.430989)">Statistical result</text>
-    <text style="font-size: 5.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(369.646773 74.388176)">G×S* + non-linearity</text>
-    <text style="font-size: 5.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(379.062086 80.878176)">not gate proof</text>
-    <text style="font-size: 5.5px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(367.693414 87.368176)">not outward-loss proof</text>
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #162536" x="21.456" y="127.48068" transform="rotate(-0 21.456 127.48068)">Known-target examples: independent evidence gates govern every intervention module</text>
    </g>
    <g id="text_6">
-    <text style="font-weight: 700; font-size: 8.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #162536" x="21.456" y="127.48068" transform="rotate(-0 21.456 127.48068)">Known-target examples: independent evidence gates govern every intervention module</text>
+    <text style="font-size: 7.3px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(37.04832 180.025104)">Known-target example: SCA3</text>
+    <text style="font-size: 7.3px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(47.352156 188.639104)">mutant-ATXN3 lowering</text>
+    <text style="font-size: 7.3px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(49.053969 197.253104)">Only after safety, dose</text>
+    <text style="font-size: 7.3px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(42.824445 205.802658)">+ CSF target engagement</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(42.188016 181.070948)">Known-target example: SCA3</text>
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(51.503813 188.858948)">mutant-ATXN3 lowering</text>
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(53.042438 196.646948)">Only after safety, dose</text>
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(47.410266 204.376682)">+ CSF target engagement</text>
+    <text style="font-size: 7.3px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(173.20032 180.025104)">Known-target example: SCA6</text>
+    <text style="font-size: 7.3px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(186.496586 188.639104)">L-arginine uncertainty</text>
+    <text style="font-size: 7.3px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(176.403766 197.960291)">Randomized clinical benefit</text>
+    <text style="font-size: 7.3px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(171.083891 205.867104)">+ enhanced safety monitoring</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(178.340016 181.070948)">Known-target example: SCA6</text>
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(190.361297 188.858948)">L-arginine uncertainty</text>
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(181.236281 197.286323)">Randomized clinical benefit</text>
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(176.426531 204.434948)">+ enhanced safety monitoring</text>
+    <text style="font-size: 7.3px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(311.412289 180.025104)">Circuit phase 0 (conditional)</text>
+    <text style="font-size: 7.3px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(317.320156 189.346291)">Reliable human classifier</text>
+    <text style="font-size: 7.3px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(308.698742 197.167557)">Precedes decline | normalizes</text>
+    <text style="font-size: 7.3px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(324.548867 205.867104)">Washout reversibility</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(316.354453 181.070948)">Circuit phase 0 (conditional)</text>
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(321.695812 189.498323)">Reliable human classifier</text>
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(313.901109 196.569604)">Precedes decline | normalizes</text>
-    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #162536" transform="translate(328.231359 204.434948)">Washout reversibility</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(54.580547 221.921091)">Target engagement +</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(57.597469 229.842895)">disease-activity MRI</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(64.638328 237.7647)">not X validation</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(17.080367 234.495143)">Target engagement + disease-activity MRI</text>
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(60.568414 242.29692)">not X validation</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(197.211891 221.921091)">Clinical efficacy +</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(195.513422 229.842895)">withdrawal pattern</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(175.094156 237.7647)">not a validated surrogate claim</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(165.814766 234.495143)">Clinical efficacy + withdrawal pattern</text>
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(175.877578 242.29692)">not a validated surrogate claim</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(326.884547 221.921091)">Target engagement +</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(336.072469 229.842895)">reversibility first</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(322.435219 237.7647)">not disease modification</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(304.389867 234.495143)">Target engagement + reversibility first</text>
-    <text style="font-size: 6.5px; font-family: 'DejaVu Sans'; fill: #66788a" transform="translate(327.513109 242.29692)">not disease modification</text>
+    <text style="font-size: 7.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #162536" x="21.456" y="274.02246" transform="rotate(-0 21.456 274.02246)">Shared core: blinded SARA/f-SARA • NfL • genotype-specific MRI/MRS • digital gait • PRO • safety • concurrent controls</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 7.4px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #162536" x="21.456" y="274.02246" transform="rotate(-0 21.456 274.02246)">Shared core: blinded SARA/f-SARA • NfL • genotype-specific MRI/MRS • digital gait • PRO • safety • concurrent controls</text>
-   </g>
-   <g id="text_14">
-    <text style="font-weight: 700; font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #9c3f50" x="21.456" y="287.61912" transform="rotate(-0 21.456 287.61912)">Failure is informative: no model upgrade; no post-hoc redefinition of S, X, or R; trial gates stay target-specific.</text>
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #9c3f50" x="21.456" y="287.61912" transform="rotate(-0 21.456 287.61912)">Failure is informative: no model upgrade; no post-hoc redefinition of S, X, or R; trial gates stay target-specific.</text>
    </g>
   </g>
  </g>
