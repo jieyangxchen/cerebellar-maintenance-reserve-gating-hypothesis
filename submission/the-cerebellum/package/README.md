@@ -1,6 +1,6 @@
 # *The Cerebellum* submission package
 
-**Package status:** formal-submission candidate generated from manuscript version 0.2.3 after Springer Nature Publishing Support advised direct submission for Editor-in-Chief screening. Support did not assess scientific suitability, choose the article category, or approve the repository history. These files have not been formally submitted to the journal.
+**Package status:** manuscript version 0.2.3 was formally submitted to *The Cerebellum* on 21 August 2026 and is currently undergoing technical checks. Springer Nature Publishing Support advised direct submission for Editor-in-Chief screening but did not assess scientific suitability, choose the article category, or approve the repository history. Technical checks do not constitute peer review, editorial acceptance, or publication.
 
 ## Word files
 
@@ -23,7 +23,7 @@ The main manuscript embeds the high-resolution PNG versions. The repository also
 
 All three figures are original, programmatically generated works. The portal's accepted-file checks determine which vector format should accompany the embedded manuscript figures.
 
-## Author checks before formal submission
+## Submission record and continuing author checks
 
 1. The author confirmed on 20 August 2026 that the manuscript is not under consideration by another journal; the cover letter records this declaration.
 2. The author confirmed that no acknowledgements are required; the manuscript and title page state “Acknowledgements: None.”
@@ -31,7 +31,7 @@ All three figures are original, programmatically generated works. The portal's a
 4. Disclose the existing public GitHub history in the portal without claiming that Publishing Support approved it.
 5. DOI links and the live registry status/results for NCT05822908 were rechecked on 21 August 2026; repeat the check if submission occurs later.
 6. Select independent reviewer suggestions only after checking institutional, collaboration, supervisory, personal, and other conflicts.
-7. Rebuild the package after any manuscript change and archive the exact submitted files only when the formal submission is complete.
+7. The exact package is archived in the immutable `v0.2.3` tag and GitHub Release. Do not overwrite that tag or its assets; any journal-requested revision should receive a new version.
 
 ## Safety and evidence boundary
 

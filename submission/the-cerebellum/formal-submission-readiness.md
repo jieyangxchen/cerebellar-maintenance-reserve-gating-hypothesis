@@ -2,7 +2,7 @@
 
 **Candidate:** version 0.2.3, prepared 21 August 2026
 **Scientific evidence cut-off:** 19 August 2026
-**Submission status:** not yet formally submitted
+**Submission status:** formally submitted to *The Cerebellum* on 21 August 2026; technical checks in progress
 
 ## Recommended portal record
 
@@ -47,13 +47,13 @@ Do not upload or publish the full support correspondence, ticket identifier, or 
 - The manuscript is not under consideration by another journal.
 - Acknowledgements: None.
 
-## Author-only gates before the final submit action
+## Post-submission author record
 
 - [x] Confirmed by the author on 20 August 2026: the manuscript is not under consideration by another journal.
 - [ ] Enter the private full postal correspondence address if the portal requires it; do not commit it to the public repository.
 - [x] Confirmed by the author: Acknowledgements: None.
 - [ ] Select suggested reviewers only after institutional and conflict checks.
 - [x] Rechecked all 25 DOI links and the live status/results record for NCT05822908 on 21 August 2026; repeat this check if submission occurs on a later date.
-- [ ] Review the generated files and all portal declarations before clicking Submit.
+- [x] Reviewed the generated files and portal declarations before formal submission on 21 August 2026.
 
-Only after these factual gates are complete should the exact submitted package be tagged or released.
+The exact submitted package is preserved under the `v0.2.3` tag and GitHub Release. Do not move or overwrite that tag; any technical-check correction or later journal-requested revision should receive a new version.

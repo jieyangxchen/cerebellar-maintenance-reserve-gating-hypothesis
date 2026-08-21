@@ -2,6 +2,12 @@
 
 All notable public manuscript-package changes are recorded here. Versions describe repository research artifacts, not journal publication status.
 
+## Post-release submission status — 21 August 2026
+
+- Formally submitted version 0.2.3 to *The Cerebellum*; the journal portal currently reports technical checks in progress.
+- Recorded this as an administrative status only. Technical checks do not constitute peer review, editorial acceptance, or publication.
+- Preserved the `v0.2.3` tag and its five Release assets unchanged as the archival submission package.
+
 ## 0.2.3 — 21 August 2026
 
 - Completed a full manuscript and submission-package quality review against the current *The Cerebellum* instructions.

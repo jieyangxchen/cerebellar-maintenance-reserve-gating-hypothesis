@@ -1,6 +1,6 @@
 # *The Cerebellum* submission checklist
 
-**Status:** formal-submission checklist for version 0.2.3; requirements, DOI links, and registry metadata rechecked on 21 August 2026, with the Publishing Support response reviewed on 20 August 2026.
+**Status:** version 0.2.3 was formally submitted to *The Cerebellum* on 21 August 2026 and is currently undergoing technical checks; requirements, DOI links, and registry metadata were rechecked on 21 August 2026, with the Publishing Support response reviewed on 20 August 2026.
 
 ## 1. Presubmission decision
 
@@ -42,14 +42,14 @@
 - [x] Confirm the final manuscript word count: approximately 4,950 visible English-word tokens from the abstract through the conclusion (approximately 5,176 including declarations; references excluded), well below 10,000 words. The portal's own counter may differ slightly.
 - [x] Verified all 25 DOI links and bibliographic metadata on 21 August 2026; repeat if submission occurs later.
 - [x] Rechecked NCT05822908 on 21 August 2026: recruiting, no posted results, registry update posted 19 August 2026; repeat if submission occurs later.
-- [ ] Archive the exact submitted version with a tag or release only after the submitted files are final.
+- [x] Archived the exact submitted package under the immutable `v0.2.3` tag and GitHub Release.
 
 ## 5. Reviewer and portal preparation
 
 - [ ] Identify independent reviewers from different institutions and countries.
 - [ ] Provide institutional email addresses for suggested reviewers; if unavailable, provide an identity-verification link such as an institutional page, publication record, or researcher ID.
 - [ ] Check for recent collaboration, institutional, supervisory, personal, or other conflicts before suggesting reviewers.
-- [ ] Complete submission through the journal's online system only after all author declarations are factual and final.
+- [x] Completed formal submission through the journal's online system on 21 August 2026 after confirming the author declarations.
 - [x] Retain the Publishing Support response privately with the submission record; do not publish the full correspondence or ticket identifier in the repository.
 
 ## Official pages

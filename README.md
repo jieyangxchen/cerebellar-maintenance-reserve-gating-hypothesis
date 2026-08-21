@@ -3,9 +3,10 @@
 [![Status: hypothesis and protocol](https://img.shields.io/badge/status-hypothesis%20%2B%20protocol-B96B25)](#scientific-status)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-287D61)](LICENSE)
 [![Target: The Cerebellum](https://img.shields.io/badge/target-The%20Cerebellum-6A4C93)](submission/the-cerebellum/submission-checklist.md)
+[![Submission: technical checks](https://img.shields.io/badge/submission-technical%20checks-2F5D8A)](submission/the-cerebellum/formal-submission-readiness.md)
 [![Evidence cut-off](https://img.shields.io/badge/evidence%20cut--off-2026--08--19-2F5D8A)](evidence/evidence-audit.md)
 
-A public, submission-oriented new-ideas package for testing whether modifier effects in hereditary cerebellar ataxia can include a mismatch between genetic demand, externally conditioned system activation, and finite homeostatic reserve. Version 0.2.3 is the formal-submission candidate for *The Cerebellum* following a Springer Nature Publishing Support response advising direct submission. Publishing Support did not assess scientific suitability, select the article category, or determine the journal-specific acceptability of the public GitHub history. The manuscript has not been formally submitted, peer reviewed, or accepted.
+A public, submission-oriented new-ideas package for testing whether modifier effects in hereditary cerebellar ataxia can include a mismatch between genetic demand, externally conditioned system activation, and finite homeostatic reserve. **Formally submitted to *The Cerebellum* on 21 August 2026; currently undergoing technical checks.** Version 0.2.3 is the archived submission package. Publishing Support did not assess scientific suitability, select the article category, or determine the journal-specific acceptability of the public GitHub history. Technical checks do not constitute peer review, editorial acceptance, or publication.
 
 The central discipline of this repository is simple: **the derived exposure score $S$ is not the unknown biological input $X$; $X$, the gate, outward leak, reserve state, and hump-shaped human risk curve are hypotheses—not discoveries.** The package turns them into prespecified predictions that can fail, while keeping clinical intervention focused on known, measurable biology.
 
