@@ -261,6 +261,20 @@ class GatingModelTests(unittest.TestCase):
 
 
 class RepositoryValidationTests(unittest.TestCase):
+    def test_editor_flagged_figures_are_cited_immediately_before_placement(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        manuscript = (root / "manuscript" / "manuscript.md").read_text(encoding="utf-8")
+        expected = (
+            ("![Nested causal framework]", "Fig. 1"),
+            ("![Prospective validation and trial gates]", "Fig. 3"),
+        )
+
+        for image_marker, citation in expected:
+            with self.subTest(citation=citation):
+                prefix = manuscript.split(image_marker, maxsplit=1)[0].rstrip()
+                preceding_paragraph = prefix.rsplit("\n\n", maxsplit=1)[-1]
+                self.assertIn(citation, preceding_paragraph)
+
     def test_default_required_files_include_the_cerebellum_submission_package(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             errors = find_missing_required_files(Path(tmp))

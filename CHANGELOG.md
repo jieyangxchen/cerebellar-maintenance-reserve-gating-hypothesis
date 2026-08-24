@@ -2,6 +2,14 @@
 
 All notable public manuscript-package changes are recorded here. Versions describe repository research artifacts, not journal publication status.
 
+## v0.2.3-tc1 — 25 August 2026
+
+- Addressed the journal's technical-check request by adding explicit in-text citations immediately before Fig. 1 and Fig. 3.
+- Rebuilt `01_Main_Manuscript.docx` and `SHA256SUMS.txt`; the title page, cover letter, and supplementary protocols remain byte-identical to the initial submission assets.
+- Confirmed that the corrected manuscript remains 17 pages and that rendered differences from the initial submission are limited to pages 2 and 12.
+- Resubmitted the technical-check correction to *The Cerebellum* on 24 August 2026. No scientific claims, evidence, figures, declarations, or protocols were changed.
+- Preserved the original `v0.2.3` tag and Release unchanged; `v0.2.3-tc1` archives the exact technical-check correction.
+
 ## Post-release submission status — 21 August 2026
 
 - Formally submitted version 0.2.3 to *The Cerebellum*; the journal portal currently reports technical checks in progress.

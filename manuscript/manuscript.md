@@ -43,7 +43,7 @@ Throughout this new-idea article, we separate claims into four levels:
 3. **Testable inference:** prospectively operationalized and capable of failure.
 4. **Speculation:** motivates research but has no direct evidentiary support.
 
-The complete claim-by-claim audit is available in the [evidence appendix](../evidence/evidence-audit.md) and [machine-readable matrix](../evidence/evidence-matrix.tsv).
+The complete claim-by-claim audit is available in the [evidence appendix](../evidence/evidence-audit.md) and [machine-readable matrix](../evidence/evidence-matrix.tsv). The nested architecture and evidentiary boundary are summarized in Fig. 1.
 
 ![Nested causal framework](../figures/fig1-framework.svg)
 
@@ -309,7 +309,7 @@ We construct the candidate $L(t)$ without SARA to prevent circular prediction. A
 
 ## 8. Early-intervention implications of known biology
 
-The trial concepts in **Supplementary Material 1** deliberately separate SCA3 and SCA6. They illustrate early modifiability of known targets; they neither test nor validate $X$, $P$, or the proposed reserve fluxes. There is no biologically defensible common drug intervention and no pooled primary efficacy test.
+The trial concepts in **Supplementary Material 1** deliberately separate SCA3 and SCA6. They illustrate early modifiability of known targets; they neither test nor validate $X$, $P$, or the proposed reserve fluxes. There is no biologically defensible common drug intervention and no pooled primary efficacy test. The prospective validation and gated early-intervention programme is summarized in Fig. 3.
 
 ![Prospective validation and trial gates](../figures/fig3-study-program.svg)
 

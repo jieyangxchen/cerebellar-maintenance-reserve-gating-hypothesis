@@ -1,6 +1,6 @@
 # *The Cerebellum* submission package
 
-**Package status:** manuscript version 0.2.3 was formally submitted to *The Cerebellum* on 21 August 2026 and is currently undergoing technical checks. Springer Nature Publishing Support advised direct submission for Editor-in-Chief screening but did not assess scientific suitability, choose the article category, or approve the repository history. Technical checks do not constitute peer review, editorial acceptance, or publication.
+**Package status:** manuscript version 0.2.3 was formally submitted to *The Cerebellum* on 21 August 2026. The requested Fig. 1/Fig. 3 citation correction was resubmitted on 24 August 2026 and is archived as `v0.2.3-tc1` while awaiting technical re-check. Springer Nature Publishing Support advised direct submission for Editor-in-Chief screening but did not assess scientific suitability, choose the article category, or approve the repository history. Technical checks do not constitute peer review, editorial acceptance, or publication.
 
 ## Word files
 
@@ -31,7 +31,7 @@ All three figures are original, programmatically generated works. The portal's a
 4. Disclose the existing public GitHub history in the portal without claiming that Publishing Support approved it.
 5. DOI links and the live registry status/results for NCT05822908 were rechecked on 21 August 2026; repeat the check if submission occurs later.
 6. Select independent reviewer suggestions only after checking institutional, collaboration, supervisory, personal, and other conflicts.
-7. The exact package is archived in the immutable `v0.2.3` tag and GitHub Release. Do not overwrite that tag or its assets; any journal-requested revision should receive a new version.
+7. The exact initial package is archived in the immutable `v0.2.3` tag and GitHub Release; the exact Fig. 1/Fig. 3 technical-check correction is archived as `v0.2.3-tc1`. Do not overwrite either tag or its assets; any later journal-requested revision should receive a new version.
 
 ## Safety and evidence boundary
 

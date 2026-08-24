@@ -1,6 +1,6 @@
 # *The Cerebellum* submission checklist
 
-**Status:** version 0.2.3 was formally submitted to *The Cerebellum* on 21 August 2026 and is currently undergoing technical checks; requirements, DOI links, and registry metadata were rechecked on 21 August 2026, with the Publishing Support response reviewed on 20 August 2026.
+**Status:** version 0.2.3 was formally submitted to *The Cerebellum* on 21 August 2026; the requested Fig. 1/Fig. 3 citation correction was resubmitted on 24 August 2026 and is awaiting technical re-check. Requirements, DOI links, and registry metadata were rechecked on 21 August 2026, with the Publishing Support response reviewed on 20 August 2026.
 
 ## 1. Presubmission decision
 
@@ -42,7 +42,8 @@
 - [x] Confirm the final manuscript word count: approximately 4,950 visible English-word tokens from the abstract through the conclusion (approximately 5,176 including declarations; references excluded), well below 10,000 words. The portal's own counter may differ slightly.
 - [x] Verified all 25 DOI links and bibliographic metadata on 21 August 2026; repeat if submission occurs later.
 - [x] Rechecked NCT05822908 on 21 August 2026: recruiting, no posted results, registry update posted 19 August 2026; repeat if submission occurs later.
-- [x] Archived the exact submitted package under the immutable `v0.2.3` tag and GitHub Release.
+- [x] Archived the exact initial submission package under the immutable `v0.2.3` tag and GitHub Release.
+- [x] Added explicit in-text citations immediately before Fig. 1 and Fig. 3, rebuilt the main manuscript, and archived the exact technical-check correction as `v0.2.3-tc1` without changing scientific content.
 
 ## 5. Reviewer and portal preparation
 
@@ -50,6 +51,7 @@
 - [ ] Provide institutional email addresses for suggested reviewers; if unavailable, provide an identity-verification link such as an institutional page, publication record, or researcher ID.
 - [ ] Check for recent collaboration, institutional, supervisory, personal, or other conflicts before suggesting reviewers.
 - [x] Completed formal submission through the journal's online system on 21 August 2026 after confirming the author declarations.
+- [x] Resubmitted the journal-requested Fig. 1/Fig. 3 citation correction on 24 August 2026; no other manuscript content, title-page file, cover-letter file, or supplementary file was changed.
 - [x] Retain the Publishing Support response privately with the submission record; do not publish the full correspondence or ticket identifier in the repository.
 
 ## Official pages
