@@ -275,7 +275,7 @@ class RepositoryValidationTests(unittest.TestCase):
                 preceding_paragraph = prefix.rsplit("\n\n", maxsplit=1)[-1]
                 self.assertIn(citation, preceding_paragraph)
 
-    def test_default_required_files_include_the_cerebellum_submission_package(self) -> None:
+    def test_default_required_files_include_current_and_archived_submission_packages(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             errors = find_missing_required_files(Path(tmp))
             self.assertIn(
@@ -286,10 +286,14 @@ class RepositoryValidationTests(unittest.TestCase):
                 "missing required file: submission/the-cerebellum/submission-checklist.md",
                 errors,
             )
+            self.assertIn(
+                "missing required file: submission/medical-hypotheses/submission-checklist.md",
+                errors,
+            )
 
-    def test_the_cerebellum_readiness_flags_format_and_prior_art_failures(self) -> None:
+    def test_current_submission_readiness_flags_format_and_prior_art_failures(self) -> None:
         checker = getattr(
-            repository_validation, "find_the_cerebellum_readiness_errors", None
+            repository_validation, "find_current_submission_readiness_errors", None
         )
         self.assertIsNotNone(checker)
         with tempfile.TemporaryDirectory() as tmp:
@@ -313,22 +317,22 @@ class RepositoryValidationTests(unittest.TestCase):
             self.assertTrue(any("heading level" in error for error in errors))
             self.assertTrue(any("cerebellar-reserve prior art" in error for error in errors))
 
-    def test_repository_meets_the_cerebellum_readiness_checks(self) -> None:
+    def test_repository_meets_current_submission_readiness_checks(self) -> None:
         checker = getattr(
-            repository_validation, "find_the_cerebellum_readiness_errors", None
+            repository_validation, "find_current_submission_readiness_errors", None
         )
         self.assertIsNotNone(checker)
         root = Path(__file__).resolve().parents[1]
         self.assertEqual(checker(root), [])
 
-    def test_the_cerebellum_readiness_reports_uncited_numbered_references(self) -> None:
-        checker = repository_validation.find_the_cerebellum_readiness_errors
+    def test_current_submission_readiness_reports_uncited_numbered_references(self) -> None:
+        checker = repository_validation.find_current_submission_readiness_errors
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             (root / "manuscript").mkdir()
             (root / "manuscript" / "manuscript.md").write_text(
-                "# A Maintenance–Reserve–Gating Framework for Modifier Effects in "
-                "Hereditary Cerebellar Ataxia\n\n"
+                "# The Maintenance–Reserve–Gating Hypothesis of Hereditary "
+                "Cerebellar Ataxia\n\n"
                 "## Abstract\n\nShort abstract.\n\n"
                 "**Keywords:** one; two; three; four\n\n"
                 "## Main text\n\nNo numbered citation.\n\n"

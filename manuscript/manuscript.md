@@ -1,16 +1,16 @@
-# A Maintenance–Reserve–Gating Framework for Modifier Effects in Hereditary Cerebellar Ataxia
+# The Maintenance–Reserve–Gating Hypothesis of Hereditary Cerebellar Ataxia
 
-## A nested new-idea framework for non-linear environmental effects, cerebellar reserve, and early intervention
+## A testable model of non-linear modifier effects and delayed phenoconversion
 
-**Proposed article category:** New ideas, opinion and controversies for *The Cerebellum*
+**Proposed article category:** Hypothesis article for *Medical Hypotheses*
 
-**Running title:** Maintenance–reserve–gating framework in hereditary ataxia
+**Running title:** Maintenance–reserve–gating hypothesis in hereditary ataxia
 
 **Author:** Jieyang Chen
 
 **ORCID:** 0009-0001-9247-2085 ([profile](https://orcid.org/0009-0001-9247-2085))
 
-**Manuscript version:** 0.2.3, 21 August 2026
+**Manuscript version:** 0.3.0, 31 August 2026
 
 **Evidence cut-off:** 19 August 2026
 
@@ -22,21 +22,19 @@
 
 ## Abstract
 
-Pathogenic variants cause many spinocerebellar ataxias (SCAs), but they do not uniquely determine phenoconversion or progression. Established concepts of structural and functional cerebellar reserve explain how compensation can delay clinical expression; they do not specify whether an external exposure can first activate a high-demand state and only later supply enough useful input to sustain it. We therefore propose a nested, falsifiable framework rather than a newly discovered factor.
+Pathogenic variants cause many spinocerebellar ataxias (SCAs), but they do not uniquely determine when carriers phenoconvert or how rapidly they progress. Established structural and functional cerebellar-reserve concepts explain how compensation can delay clinical expression. We propose a narrower extension: in some susceptible genotypes, a measured external exposure may activate demand or exchange before it supplies enough useful input to sustain the activated state, producing non-linear reserve depletion and delayed phenoconversion.
 
-The observable layer separates measured exposure $E(t)$ from an outcome-blind, prospectively frozen score $S=h(E;\theta)$ and asks whether $S$ shows a reproducible non-linear association with phenoconversion, biomarker trajectories, and genotype. The mechanistic extension posits a still-hypothetical input $X(t)$, activation and exchange, and dynamic reserve $B(t)$. A statistical hump would support only a non-linear environmental association. Gate-specific inference additionally requires independently measured activation, uptake/exchange, and reserve proxies in the predicted temporal order, followed by selective perturbation.
+The hypothesis has two evidentiary layers. The directly testable layer separates measured exposure $E(t)$ from an outcome-blind, prospectively frozen score $S=h(E;\theta)$ and asks whether $S$ shows a reproducible non-linear association with phenoconversion and biomarker trajectories. The optional mechanistic layer posits an unidentified input $X(t)$, genotype-dependent coupling, activation/exchange gating, and dynamic reserve $B(t)$. A hump-shaped association would support only the first layer. The gating mechanism additionally requires independently measured activation, uptake/exchange, and reserve proxies to change in the predicted temporal order and to respond to selective perturbation.
 
-The human SCA evidence identified in this review does not demonstrate $X$, the gate, outward loss, or the predicted low-input idle–intermediate depletion–high-input rebalance curve. Existing evidence supports only component premises: onset heterogeneity, selected preataxic biomarkers, cerebellar reserve, and model-specific multicellular causation or early reversibility. We outline an event-driven SCA3 test bed with SCA6 transport testing and target-specific early-intervention examples. Failure of external replication, temporal ordering, or improvement over known-mechanism models rejects the corresponding layer. The framework is a research programme, not a treatment recommendation.
+Current human SCA evidence does not demonstrate $X$, a gate, outward loss, or a low-input idle–intermediate depletion–high-input rebalance curve. It supports only component premises: onset heterogeneity, cerebellar reserve, selected preataxic biomarkers, and model-specific multicellular causation or early reversibility. We specify prospective SCA3 testing, SCA6 transport testing, competing explanations, and layer-specific rejection rules. Failure of external replication, mediator ordering, or improvement over known-mechanism models rejects the corresponding layer. This is a testable etiological hypothesis, not a treatment recommendation.
 
 **Keywords:** Spinocerebellar Ataxias; Cerebellum; Environmental Exposure; Disease Progression; Biomarkers; Genetic Predisposition to Disease
 
-## One-sentence thesis
+## Hypothesis and evidentiary boundary
 
-Some hereditary cerebellar ataxias may contain a testable mismatch between genetic demand, externally conditioned activation, and dynamic reserve—but the unknown-input extension earns causal status only if it predicts new data, produces the specified mediator order, and survives selective perturbation better than known-mechanism models.
+Some hereditary cerebellar ataxias may contain a mismatch between genetic demand, externally conditioned activation, and dynamic reserve. The unidentified-input extension earns causal status only if it predicts new data, produces the specified mediator order, and survives selective perturbation better than known-mechanism models.
 
-## Claim hierarchy
-
-Throughout this new-idea article, we separate claims into four levels:
+We separate claims into four levels:
 
 1. **Established observation:** directly supported in the cited population or model.
 2. **Supported analogy:** demonstrates biological plausibility of one component, but not this model.
@@ -101,7 +99,7 @@ $$
 X(t)=\phi\{S(t);\psi\},
 $$
 
-must itself be prespecified, biologically calibrated, and tested independently of clinical outcomes. The illustrative convention $X=S$ used in Figure 2 is a model assumption, not an empirical finding. An unrestricted post-hoc $S$, $X$, $\phi$, or $\psi$ can fit almost any pattern and is scientifically empty. Failure cannot be rescued by redefining them after seeing the outcome.
+must itself be prespecified, biologically calibrated, and tested independently of clinical outcomes. The illustrative convention $X=S$ used in Fig. 2 is a model assumption, not an empirical finding. An unrestricted post-hoc $S$, $X$, $\phi$, or $\psi$ can fit almost any pattern and is scientifically empty. Failure cannot be rescued by redefining them after seeing the outcome.
 
 ### 3.3 Coupling $R$
 
@@ -160,7 +158,7 @@ $$
 
 The normalization, comparison interval, and candidate-specific measurements must be declared before outcome analysis.
 
-In the source code for Figure 2, one dimensionless example uses:
+In the source code for Fig. 2, one dimensionless example uses:
 
 $$
 U=\eta PX,
@@ -174,7 +172,7 @@ $$
 M=m_0+m_1A(X),
 $$
 
-with a constant genetic/age drain. We chose the parameters to display the hypothesized shape; they are not fitted to patients and have no dose interpretation. Figure 2 adopts $X=S$ solely to place the hypothetical dynamics on a visible standardized axis.
+with a constant genetic/age drain. We chose the parameters to display the hypothesized shape; they are not fitted to patients and have no dose interpretation. Fig. 2 adopts $X=S$ solely to place the hypothetical dynamics on a visible standardized axis.
 
 The proposed shape is not a generic consequence of a Hill gate. It requires at least three qualitative conditions over the comparison interval:
 
@@ -183,6 +181,8 @@ The proposed shape is not a generic consequence of a Hill gate. It requires at l
 3. at high $X$, uptake eventually meets or exceeds combined activity-dependent demand, loss, and the genetic/ageing drain.
 
 If the first condition fails, low input may be the most harmful state. If the second fails, no intermediate depletion maximum occurs. If the third fails, the curve remains monotonic or plateaus without rebalancing. Parameter sweeps and exposure-history simulations are therefore required before a candidate implementation can claim that a hump is robust rather than hand-selected.
+
+The resulting low-input idle, intermediate depletion, and high-input rebalance pattern is shown in Fig. 2.
 
 ![Illustrative non-monotonic curve](../figures/fig2-nonlinear-gating.svg)
 
@@ -283,56 +283,33 @@ The latent biomarker state and any coupling score must improve calibration and p
 
 ## 7. Prospective validation programme
 
-**Supplementary Material 1** and the public repository identified on the title page contain the complete prospective-cohort protocol, statistical analysis plan, and target-specific early-intervention concepts.
+The public repository identified on the title page contains the complete prospective-cohort protocol, statistical analysis plan, and early-intervention concepts. The manuscript retains only the decisions needed to make the hypothesis falsifiable.
 
-### 7.1 Population and follow-up
+### 7.1 SCA3 test bed and SCA6 transport test
 
-The confirmatory natural-history programme is a five-year, multicentre, family-aware cohort of genetically confirmed SCA3 and SCA6 expansion carriers, including preataxic participants with $\mathrm{SARA}<3$, early-manifest participants, and primarily expansion-negative relatives as controls. Clinical, NfL, ocular-motor, and digital measures occur every six months; remote gait sampling occurs every three months; structural/diffusion MRI is annual; genotype-specific MRS occurs at baseline, month 24, and month 60. Exposure history is collected independently from outcome assessors.
+The primary test is an event-driven, multicentre, family-aware cohort of genetically confirmed preataxic and early-manifest SCA3 carriers. SCA3 is the first test bed because the motivating rural-environment analysis was SCA3-specific and human phenoconversion data are comparatively mature. SCA6 is a deliberately difficult transport test across a distinct channelopathy; it is not assumed to share the same exposure curve or coupling. Expansion-negative relatives provide the preferred control group where feasible.
 
-Phenoconversion is defined prospectively as the first visit with both $\mathrm{SARA}\ge3$ and a blinded expert rating of probable or definite manifest gait ataxia, confirmed at the next six-month visit. The primary time-to-event analysis uses age as the time scale, delayed entry, interval censoring, prespecified family/site structure, and competing-risk sensitivity analysis. Residual age at onset is descriptive only because it propagates error from a first-stage genetic prediction and can be distorted by ascertainment and survival.
+Before outcome access, an independent exposure panel applies a registered rubric to a finite candidate list and freezes one measured exposure $E^*$, its lag, spatial rule, and score $S^*=h(E^*;\theta)$. The primary endpoint is prospectively defined phenoconversion, analyzed with age as the time scale, delayed entry, interval censoring, family/site structure, and competing-risk sensitivity analyses. The confirmatory model compares the locked spline and central-versus-extremes contrast against a known-mechanism model, then tests calibration in held-out sites and a geographically separate SCA3 cohort. SCA6 tests transport only after the SCA3 implementation is frozen.
 
-### 7.2 SCA3 test bed, SCA6 transport test, and candidate exposure
+The motivating pesticide-intensity and untreated-private-well measures are exposure proxies, not maintenance resources or measurements of $X$. Any lower estimated risk at high exposure requires analyses of exposure error, selection, survivor bias, and unmeasured confounding; it cannot be interpreted as beneficial exposure or justify escalation.
 
-SCA3 is the most defensible first test bed because the motivating rural-environment study was SCA3-specific and available phenoconversion information is stronger. SCA6 provides a deliberately difficult transport and heterogeneity test across a distinct channelopathy; it is not assumed to share the same coupling or exposure curve. Genotype-specific curves are therefore primary scientific objects. Any pooled contrast must justify its weights by a target population rather than inherit the planned recruitment ratio, and genotype interaction remains estimation-focused until its simulation-defined information target is reached.
+### 7.2 Biomarker and information requirements
 
-Before outcome unblinding, an outcome-blind exposure panel applies a registered rubric to two rural-environment operationalizations—five-year-lagged residential agricultural pesticide intensity and five-year-lagged untreated-private-well residence—and selects one measured $E^*$. Its rank-preserving score $S^*=h(E^*;\theta)$ is frozen from exposure-only data. These are candidate proxies motivated by one exploratory ecological association; neither is a maintenance resource, direct measure of $X$, or justification for exposure escalation. Outcome-blind reliability and common support are required for the statistical test, and a biological $S\rightarrow X$ interpretation requires separate calibration. A lower observed risk at high pesticide or untreated-well exposure would demand bias analyses and could not be called beneficial rebalancing.
+Clinical, neurofilament light chain (NfL), ocular-motor, digital gait, structural MRI, and genotype-specific MRS measurements provide longitudinal outcomes. A candidate biomarker factor $L(t)$ is constructed without SARA, tested for site/genotype measurement invariance, and evaluated only on future prediction. It is rejected if it is unstable, merely reproduces NfL, or does not improve external calibration.
 
-Restricted-cubic-spline and central-versus-extremes analyses remain locked. Internal–external validation leaves out sites or regions in turn, and a geographically separate SCA3 cohort is preferred for the first external replication. SCA6 then tests transport rather than serving as automatic pooled confirmation.
-
-### 7.3 Sample-size logic
-
-The cohort is event-driven. A simplified continuous-exposure benchmark gives about 108 events for a hazard ratio of 1.5 per standard deviation, 90% power, two-sided alpha 0.025, and covariate $R^2=0.30$. Five hundred preataxic SCA3 and 300 preataxic SCA6 carriers would yield only about 132 conversions under the protocol's conservative assumptions. That may support an SCA3-led exposure estimate if the exposure distribution is favourable; it is not robust power for a multi-degree-of-freedom genotype interaction. Recruitment weights do not define biological weights. Final sizing requires frozen simulation of interval censoring, family clustering, exposure error, site heterogeneity, and genotype-specific support; an underpowered interaction is inconclusive rather than negative.
-
-### 7.4 Latent biomarker state
-
-We construct the candidate $L(t)$ without SARA to prevent circular prediction. A longitudinal factor model uses NfL, genotype-specific MRI/MRS, ocular-motor physiology, and digital measures; it tests site/genotype measurement invariance, uses cross-validation, and then predicts phenoconversion and functional decline. The model is abandoned if it is unstable, merely reproduces NfL, or does not improve external prediction. Predictive gain for $L$ would validate only the measurement model; it would not identify mechanistic reserve $B$.
+The cohort is event-driven rather than fixed by an optimistic interaction effect. A simplified benchmark requires approximately 108 phenoconversions for a hazard ratio of 1.5 per standard deviation, 90% power, two-sided alpha 0.025, and covariate $R^2=0.30$. The repository's illustrative 800-carrier scenario yields approximately 132 conversions under stated assumptions—potentially enough for an SCA3-led exposure estimate if common support is adequate, but not robust evidence for a flexible genotype interaction. Final sizing requires frozen simulation of interval censoring, clustering, exposure error, site heterogeneity, and genotype-specific support.
 
 ## 8. Early-intervention implications of known biology
 
-The trial concepts in **Supplementary Material 1** deliberately separate SCA3 and SCA6. They illustrate early modifiability of known targets; they neither test nor validate $X$, $P$, or the proposed reserve fluxes. There is no biologically defensible common drug intervention and no pooled primary efficacy test. The prospective validation and gated early-intervention programme is summarized in Fig. 3.
+The repository's trial concepts deliberately separate SCA3 and SCA6. They illustrate early modifiability of known targets; they neither test nor validate $X$, $P$, or the proposed reserve fluxes. There is no biologically defensible common drug intervention or pooled efficacy test. Fig. 3 summarizes the separation between natural-history testing and later target-specific intervention.
 
 ![Prospective validation and trial gates](../figures/fig3-study-program.svg)
 
 **Fig. 3** Prospective validation and gated early-intervention programme. A shared natural-history and measurement core feeds separate genotype- and target-specific examples. The SCA3 and SCA6 concepts test known targets, not the unknown input. The circuit module stays inactive until prospective human evidence meets four gates. A failed cohort signal stops model escalation and cannot be repaired by redefining $S$, $X$, or $R$. 5-y, five-year; CSF, cerebrospinal fluid; f-SARA, functional SARA; $G\times S^*$, genotype-by-score interaction; H1, prespecified SCA3 hump contrast; NfL, neurofilament light chain; MRI, magnetic resonance imaging; MRS, magnetic resonance spectroscopy; PRO, patient-reported outcome; SARA, Scale for the Assessment and Rating of Ataxia; SCA, spinocerebellar ataxia
 
-### 8.1 Molecular lowering in SCA3
+Allele-specific antisense-oligonucleotide proof of concept in SCA3 patient-derived neurons and an ongoing CAG-repeat-targeting clinical programme justify target-engagement-led development, but neither establishes clinical benefit [23,24]. A small SCA6 L-arginine trial produced an imprecise 48-week estimate and does not support a shared maintenance input [25]. These examples illustrate why genotype-specific known-target trials should remain separate from tests of the environmental hypothesis.
 
-Allele-specific antisense oligonucleotide (ASO) proof-of-concept in SCA3 patient-derived neurons reduced mutant ataxin-3 for one linked single-nucleotide polymorphism (SNP) strategy while largely preserving wild type [23]. A different CAG-repeat-targeting strategy, VO659, is registered in an open-label phase 1/2a study with no posted SCA efficacy result at the evidence cut-off [24]. These observations justify conditional, target-engagement-led development after agent-specific human safety and dose information; they do not establish clinical benefit. Intrathecal lowering is dose-adjustable but not rapidly reversible and should not be described as a circuit downshift.
-
-### 8.2 Clinical uncertainty in SCA6
-
-A 40-person phase 2 L-arginine trial in SCA6 estimated a 48-week SARA difference of −1.52 points, but the confidence interval included no effect and safety events require caution [25]. A confirmatory study would need concurrent randomized controls, conservative effect assumptions, staged entry into earlier disease, clinical rather than biomarker primary benefit, and enhanced hepatic, renal, metabolic, aspiration, and pneumonia monitoring. This example illustrates uncertainty in translating early intervention; it is not evidence for a shared maintenance input.
-
-### 8.3 Circuit-targeted phase 0
-
-A circuit study is not currently ready. It activates only when all four conditions hold:
-
-1. the human hyperactivity classifier has a test–retest intraclass correlation coefficient (ICC) of at least 0.75;
-2. the classifier prospectively precedes decline after stage adjustment;
-3. the intervention moves the signature toward a healthy reference rather than imposing blanket inhibition; and
-4. the physiological effect returns toward baseline within a prespecified 2–4 week washout without persistent loss.
-
-The primary endpoint of an initial phase 0 study would be target engagement and washout reversibility, not SARA or disease modification. “Downshift” always means selective, reversible, pathology-specific modulation; it never means structural injury or destruction.
+A circuit-targeted phase 0 study is not currently justified. It should proceed only after a reproducible human activity signature shows test–retest reliability, precedes decline after stage adjustment, can be moved toward a healthy reference without blanket inhibition, and returns toward baseline during a prespecified washout. Its first endpoint would be target engagement and reversibility, not clinical efficacy. “Downshift” means selective, reversible, pathology-specific modulation; it never means structural injury.
 
 ## 9. Nested model comparison
 
@@ -371,23 +348,23 @@ First, the framework is underdetermined: several flux combinations can generate 
 
 ## 13. Conclusion
 
-The maintenance–reserve–gating framework is best treated as a constrained model class nested within established cerebellar-reserve theory. Its value does not depend on asserting that a novel field or substance exists. It asks whether measured external exposures, genotype, and dynamic homeostatic capacity produce a prospectively predictable, non-linear transition before advanced structural degeneration.
+The maintenance–reserve–gating hypothesis is a constrained model class nested within established cerebellar-reserve theory. Its value does not depend on asserting that a novel field or substance exists. It asks whether measured external exposures, genotype, and dynamic homeostatic capacity produce a prospectively predictable, non-linear transition before advanced structural degeneration.
 
-Current evidence supports onset heterogeneity, established concepts of structural and functional cerebellar reserve, early biomarker abnormalities in selected human cohorts, and model-specific multicellular causation or stage-dependent reversibility. It does not support $X$, a gate, outward loss, or a hump-shaped human risk curve. The decisive next step is therefore not speculative treatment. It is an SCA3-led, preregistered test of a reliable measured exposure, followed by external replication and SCA6 transport testing. Gate-specific language requires the independent activation–uptake–reserve sequence and perturbation. If those tests fail, existing reserve and known molecular mechanisms should replace the added layer.
+Current evidence supports onset heterogeneity, established structural and functional cerebellar reserve, early biomarker abnormalities in selected human cohorts, and model-specific multicellular causation or stage-dependent reversibility. It does not support $X$, a gate, outward loss, or a hump-shaped human risk curve. The decisive next step is an SCA3-led, preregistered test of one reliably measured exposure, followed by external replication and SCA6 transport testing. Gate-specific language requires an independent activation–uptake–reserve sequence and perturbation. If those tests fail, existing reserve and known molecular mechanisms should replace the added layer.
 
 ## Declarations
 
 ### Data and code availability
 
-This article contains no participant-level data. Figure source, deterministic sample-size scenarios, protocols, evidence audit, and repository checks are public in the repository identified on the title page. The figures were generated programmatically with Python and Matplotlib; source code and vector exports are provided in that repository. Trial concepts follow the logic of [SPIRIT 2025](https://www.bmj.com/content/389/bmj-2024-081477), [CONSORT 2025](https://www.bmj.com/content/389/bmj-2024-081123), and [ICH E9(R1)](https://www.ema.europa.eu/en/ich-e9-statistical-principles-clinical-trials-scientific-guideline), but they are not substitutes for a sponsor-approved final protocol or statistical analysis plan (SAP).
+No participant-level or experimental data are associated with this article. Figure source, deterministic sample-size scenarios, protocols, evidence audit, and repository checks are public in the repository identified on the title page. The figures were generated programmatically with Python and Matplotlib; source code and vector exports are provided in that repository. The research-planning documents are not substitutes for sponsor-approved protocols or statistical analysis plans.
 
 ### Ethics approval and consent
 
-Not applicable. This article is a theoretical framework and critical review and reports no research involving human participants, animals, participant data, or biological material.
+Not applicable. This article is a hypothesis and critical review and reports no research involving human participants, animals, participant data, or biological material.
 
 ### Author contribution
 
-Jieyang Chen conceived the framework, performed the literature organization and claim audit, designed the proposed research programme, prepared the figures and reproducibility materials, and drafted and revised the manuscript.
+Jieyang Chen conceived the hypothesis, performed the literature organization and claim audit, designed the proposed research programme, prepared the figures and reproducibility materials, and drafted and revised the manuscript.
 
 ### Acknowledgements
 
@@ -401,9 +378,9 @@ This work received no external funding.
 
 The author declares no competing interests. The author retains copyright in the associated public repository and may consider future commercial-licensing requests. No commercial funding or payment was received for this work.
 
-### AI-assisted tools
+### Declaration of generative AI and AI-assisted technologies in the manuscript preparation process
 
-OpenAI Codex was used as an AI-assisted tool for literature organization, drafting and language editing, code generation for figures and repository checks, and internal consistency review. It is not an author. The named author remains responsible for source verification, scientific claims, analyses, disclosures, and the submitted version.
+During the preparation of this work, the author used OpenAI Codex to support manuscript organization, language and readability editing, figure and repository-check code, and internal consistency review. After using this tool, the author reviewed and edited the content as needed and takes full responsibility for the content of the publication. OpenAI Codex is not an author.
 
 ## References
 

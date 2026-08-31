@@ -45,6 +45,14 @@ REQUIRED_FILES = (
     "evidence/evidence-matrix.tsv",
     "submission/the-cerebellum/presubmission-inquiry.md",
     "submission/the-cerebellum/submission-checklist.md",
+    "submission/medical-hypotheses/build_submission_package.py",
+    "submission/medical-hypotheses/submission-checklist.md",
+    "submission/medical-hypotheses/submission-readiness.md",
+    "submission/medical-hypotheses/package/README.md",
+    "submission/medical-hypotheses/package/01_Main_Manuscript.docx",
+    "submission/medical-hypotheses/package/02_Title_Page.docx",
+    "submission/medical-hypotheses/package/03_Cover_Letter.docx",
+    "submission/medical-hypotheses/package/SHA256SUMS.txt",
     "figures/fig1-framework.svg",
     "figures/fig1-framework.pdf",
     "figures/fig1-framework.png",
@@ -86,9 +94,8 @@ LICENSE_MARKERS = {
     "README.md": "CC BY-NC 4.0",
     "CITATION.cff": "license: CC-BY-NC-4.0",
 }
-THE_CEREBELLUM_TARGET_TITLE = (
-    "A Maintenance–Reserve–Gating Framework for Modifier Effects in "
-    "Hereditary Cerebellar Ataxia"
+CURRENT_TARGET_TITLE = (
+    "The Maintenance–Reserve–Gating Hypothesis of Hereditary Cerebellar Ataxia"
 )
 ABSTRACT_WORD = re.compile(r"\b[A-Za-z0-9][A-Za-z0-9'–-]*\b")
 RESERVE_PRIOR_ART_DOIS = (
@@ -245,8 +252,8 @@ def find_evidence_matrix_errors(root: Path) -> list[str]:
     return errors
 
 
-def find_the_cerebellum_readiness_errors(root: Path) -> list[str]:
-    """Check stable journal-facing constraints in the Markdown source package."""
+def find_current_submission_readiness_errors(root: Path) -> list[str]:
+    """Check stable journal-facing constraints in the current Markdown source."""
 
     manuscript_path = root / "manuscript" / "manuscript.md"
     bibliography_path = root / "manuscript" / "references.bib"
@@ -259,7 +266,7 @@ def find_the_cerebellum_readiness_errors(root: Path) -> list[str]:
         (line[2:].strip() for line in manuscript.splitlines() if line.startswith("# ")),
         "",
     )
-    if first_heading != THE_CEREBELLUM_TARGET_TITLE:
+    if first_heading != CURRENT_TARGET_TITLE:
         errors.append("manuscript/manuscript.md: target title is not frozen")
 
     abstract_match = re.search(
@@ -361,7 +368,7 @@ def validate_repository(root: Path) -> list[str]:
         *find_invalid_doi_declarations(root),
         *find_legacy_math_delimiters(root),
         *find_evidence_matrix_errors(root),
-        *find_the_cerebellum_readiness_errors(root),
+        *find_current_submission_readiness_errors(root),
         *find_stale_generated_files(root),
         *find_unsafe_claims(root),
     ]

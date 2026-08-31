@@ -2,6 +2,18 @@
 
 All notable public manuscript-package changes are recorded here. Versions describe repository research artifacts, not journal publication status.
 
+## 0.3.0 — 31 August 2026
+
+- Recorded that *The Cerebellum* declined version 0.2.3 at editorial assessment because it remained speculative and invited a new version after real-world validation; that submission is closed.
+- Retargeted the manuscript to *Medical Hypotheses* as a hypothesis article without implying that the target journal has accepted or endorsed it.
+- Retitled the article “The Maintenance–Reserve–Gating Hypothesis of Hereditary Cerebellar Ataxia” and rewrote the abstract around one falsifiable proposition.
+- Preserved the two evidence layers: a directly testable measured-exposure model and an optional $X$/gating mechanism requiring independent mediator and perturbation evidence.
+- Condensed the SCA3 cohort, SCA6 transport test, and early-intervention examples in the article while retaining full research-planning protocols and SAP in the repository.
+- Added a *Medical Hypotheses*-specific three-file Word package, cover letter, checklist, readiness record, deterministic builder, and SHA-256 manifest.
+- Updated the generative-AI declaration to the current Elsevier format and kept it immediately before the references.
+- Preserved the 19 August 2026 evidence cut-off and explicitly stated that version 0.3.0 contains no new real-world validation.
+- Left the immutable `v0.2.3` and `v0.2.3-tc1` archives unchanged.
+
 ## v0.2.3-tc1 — 25 August 2026
 
 - Addressed the journal's technical-check request by adding explicit in-text citations immediately before Fig. 1 and Fig. 3.

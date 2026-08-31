@@ -1,14 +1,14 @@
-# Maintenance–Reserve–Gating Framework for Hereditary Cerebellar Ataxia
+# Maintenance–Reserve–Gating Hypothesis of Hereditary Cerebellar Ataxia
 
 [![Status: hypothesis and protocol](https://img.shields.io/badge/status-hypothesis%20%2B%20protocol-B96B25)](#scientific-status)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-287D61)](LICENSE)
-[![Target: The Cerebellum](https://img.shields.io/badge/target-The%20Cerebellum-6A4C93)](submission/the-cerebellum/submission-checklist.md)
-[![Submission: technical re-check](https://img.shields.io/badge/submission-technical%20re--check-2F5D8A)](submission/the-cerebellum/formal-submission-readiness.md)
+[![Target: Medical Hypotheses](https://img.shields.io/badge/target-Medical%20Hypotheses-6A4C93)](submission/medical-hypotheses/submission-checklist.md)
+[![Submission: v0.3 candidate](https://img.shields.io/badge/submission-v0.3%20candidate-2F5D8A)](submission/medical-hypotheses/submission-readiness.md)
 [![Evidence cut-off](https://img.shields.io/badge/evidence%20cut--off-2026--08--19-2F5D8A)](evidence/evidence-audit.md)
 
-A public, submission-oriented new-ideas package for testing whether modifier effects in hereditary cerebellar ataxia can include a mismatch between genetic demand, externally conditioned system activation, and finite homeostatic reserve. **Formally submitted to *The Cerebellum* on 21 August 2026; an editorial-office technical-check correction was resubmitted on 24 August 2026 and is awaiting technical re-check.** Version 0.2.3 is the archived initial submission package; `v0.2.3-tc1` archives the exact technical-check correction. Publishing Support did not assess scientific suitability, select the article category, or determine the journal-specific acceptability of the public GitHub history. Technical checks do not constitute peer review, editorial acceptance, or publication.
+A public, submission-oriented hypothesis package for testing whether modifier effects in hereditary cerebellar ataxia can include a mismatch between genetic demand, externally conditioned system activation, and finite homeostatic reserve. *The Cerebellum* declined version 0.2.3 at editorial assessment because the manuscript remained speculative and invited a new submission after real-world validation. That submission is closed. Version 0.3.0 is a separately tailored public submission candidate for *Medical Hypotheses*; it has not yet been submitted to the journal or tagged as a journal-submission release.
 
-The central discipline of this repository is simple: **the derived exposure score $S$ is not the unknown biological input $X$; $X$, the gate, outward leak, reserve state, and hump-shaped human risk curve are hypotheses—not discoveries.** The package turns them into prespecified predictions that can fail, while keeping clinical intervention focused on known, measurable biology.
+The central discipline of this repository is simple: **the derived exposure score $S$ is not the unknown biological input $X$; $X$, the gate, outward loss, reserve state, and hump-shaped human risk curve are hypotheses—not discoveries.** The package turns them into prespecified predictions that can fail, while keeping clinical intervention focused on known, measurable biology.
 
 - [English manuscript](manuscript/manuscript.md)
 - [中文工作稿](manuscript/manuscript_zh.md)
@@ -17,8 +17,10 @@ The central discipline of this repository is simple: **the derived exposure scor
 - [Statistical analysis plan](protocols/statistical-analysis-plan.md)
 - [Evidence audit](evidence/evidence-audit.md)
 - [Evidence matrix](evidence/evidence-matrix.tsv)
+- [Medical Hypotheses submission checklist](submission/medical-hypotheses/submission-checklist.md)
+- [Version 0.3.0 readiness record](submission/medical-hypotheses/submission-readiness.md)
 - [Presubmission inquiry and response status](submission/the-cerebellum/presubmission-inquiry.md)
-- [The Cerebellum submission checklist](submission/the-cerebellum/submission-checklist.md)
+- [Archived The Cerebellum submission checklist](submission/the-cerebellum/submission-checklist.md)
 
 ## The three figures
 
@@ -119,7 +121,7 @@ Residential histories and genetic-carrier data are sensitive. Any real cohort mu
 
 ## Versioning, citation, and license
 
-The scientific evidence cut-off for version 0.2.3 remains **19 August 2026**. The 21 August release adds bibliographic completion, a current registry-status check, figure and caption compliance, and final submission QA; it does not add scientific evidence published after the cut-off. The `v0.2.3-tc1` technical-check archive adds only explicit in-text citations immediately before Fig. 1 and Fig. 3 and does not alter scientific content. Current trial status is timestamped rather than assumed to remain current. Version history is recorded in [CHANGELOG.md](CHANGELOG.md).
+The scientific evidence cut-off for version 0.3.0 remains **19 August 2026**. Version 0.3.0 changes editorial positioning, title, abstract, evidentiary boundaries, protocol condensation, and journal-specific declarations; it does not claim new real-world validation. The immutable `v0.2.3` and `v0.2.3-tc1` tags preserve the initial *The Cerebellum* submission and technical-check correction. Current trial status is timestamped rather than assumed to remain current. Version history is recorded in [CHANGELOG.md](CHANGELOG.md).
 
 Please cite using [CITATION.cff](CITATION.cff). Text, protocols, original figures, and code are released under [CC BY-NC 4.0](LICENSE): personal use and non-commercial research, teaching, sharing, and adaptation are permitted with attribution; commercial use requires separate permission from the copyright holder. Third-party papers and linked materials retain their original copyright.
 
