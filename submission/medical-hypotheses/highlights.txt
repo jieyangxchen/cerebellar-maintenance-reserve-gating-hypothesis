@@ -1,0 +1,4 @@
+- A two-layer model separates measurable modifiers from an unobserved mechanism
+- Intermediate exposure may deplete reserve more than very low or high exposure
+- Prospective tests separate non-linear association from a causal mechanism
+- Early reversible intervention is restricted to known biological targets

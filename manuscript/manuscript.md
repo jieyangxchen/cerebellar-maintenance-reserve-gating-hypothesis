@@ -10,7 +10,7 @@
 
 **ORCID:** 0009-0001-9247-2085 ([profile](https://orcid.org/0009-0001-9247-2085))
 
-**Manuscript version:** 0.3.0, 31 August 2026
+**Manuscript version:** 0.3.1, 1 September 2026
 
 **Evidence cut-off:** 19 August 2026
 
@@ -358,13 +358,13 @@ Current evidence supports onset heterogeneity, established structural and functi
 
 No participant-level or experimental data are associated with this article. Figure source, deterministic sample-size scenarios, protocols, evidence audit, and repository checks are public in the repository identified on the title page. The figures were generated programmatically with Python and Matplotlib; source code and vector exports are provided in that repository. The research-planning documents are not substitutes for sponsor-approved protocols or statistical analysis plans.
 
-### Ethics approval and consent
+### Ethics statement
 
-Not applicable. This article is a hypothesis and critical review and reports no research involving human participants, animals, participant data, or biological material.
+Ethics approval and informed consent were not required because this article is a hypothesis and critical review that reports no original research involving human participants, animals, participant-level data, biological material, or identifiable personal information.
 
-### Author contribution
+### CRediT author statement
 
-Jieyang Chen conceived the hypothesis, performed the literature organization and claim audit, designed the proposed research programme, prepared the figures and reproducibility materials, and drafted and revised the manuscript.
+Jieyang Chen: Conceptualization; Methodology; Investigation; Data curation; Software; Visualization; Writing – original draft; Writing – review & editing; Project administration.
 
 ### Acknowledgements
 
@@ -374,9 +374,11 @@ None.
 
 This work received no external funding.
 
-### Competing interests
+### Declaration of interest
 
-The author declares no competing interests. The author retains copyright in the associated public repository and may consider future commercial-licensing requests. No commercial funding or payment was received for this work.
+Declarations of interest: none.
+
+For transparency, the author retains copyright in the associated public repository and may consider future commercial-licensing requests. This is a licensing position rather than a current financial or personal interest; no commercial funding or payment was received for this work.
 
 ### Declaration of generative AI and AI-assisted technologies in the manuscript preparation process
 

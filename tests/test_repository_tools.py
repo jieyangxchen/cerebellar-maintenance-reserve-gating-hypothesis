@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import math
 import os
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -29,6 +30,7 @@ from figures.src.make_figures import (
 )
 from scripts.validate_repository import (
     find_broken_local_links,
+    find_double_blind_submission_errors,
     find_evidence_matrix_errors,
     find_invalid_doi_declarations,
     find_legacy_math_delimiters,
@@ -290,6 +292,10 @@ class RepositoryValidationTests(unittest.TestCase):
                 "missing required file: submission/medical-hypotheses/submission-checklist.md",
                 errors,
             )
+            self.assertIn(
+                "missing required file: submission/medical-hypotheses/package/01_Anonymized_Manuscript.docx",
+                errors,
+            )
 
     def test_current_submission_readiness_flags_format_and_prior_art_failures(self) -> None:
         checker = getattr(
@@ -324,6 +330,33 @@ class RepositoryValidationTests(unittest.TestCase):
         self.assertIsNotNone(checker)
         root = Path(__file__).resolve().parents[1]
         self.assertEqual(checker(root), [])
+
+    def test_current_double_blind_submission_package_passes(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        self.assertEqual(find_double_blind_submission_errors(root), [])
+
+    def test_double_blind_checker_flags_identity_and_overlong_highlight(self) -> None:
+        current_root = Path(__file__).resolve().parents[1]
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            destination = root / "submission" / "medical-hypotheses"
+            destination.parent.mkdir(parents=True)
+            shutil.copytree(
+                current_root / "submission" / "medical-hypotheses",
+                destination,
+            )
+            overlong = "This deliberately overlong highlight exceeds the journal limit by containing far too many characters for submission"
+            (destination / "highlights.txt").write_text(
+                f"- {overlong}\n- Short two\n- Short three\n",
+                encoding="utf-8",
+            )
+            shutil.copy2(
+                destination / "package" / "02_Title_Page.docx",
+                destination / "package" / "01_Anonymized_Manuscript.docx",
+            )
+            errors = find_double_blind_submission_errors(root)
+            self.assertTrue(any("exceeds 85 characters" in error for error in errors))
+            self.assertTrue(any("author-identifying marker" in error for error in errors))
 
     def test_current_submission_readiness_reports_uncited_numbered_references(self) -> None:
         checker = repository_validation.find_current_submission_readiness_errors

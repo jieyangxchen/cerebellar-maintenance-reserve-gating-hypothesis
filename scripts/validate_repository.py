@@ -5,11 +5,14 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import re
 import sys
 import tempfile
+import zipfile
 from pathlib import Path
 from urllib.parse import unquote
+from xml.etree import ElementTree
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
@@ -48,10 +51,15 @@ REQUIRED_FILES = (
     "submission/medical-hypotheses/build_submission_package.py",
     "submission/medical-hypotheses/submission-checklist.md",
     "submission/medical-hypotheses/submission-readiness.md",
+    "submission/medical-hypotheses/highlights.txt",
     "submission/medical-hypotheses/package/README.md",
-    "submission/medical-hypotheses/package/01_Main_Manuscript.docx",
+    "submission/medical-hypotheses/package/01_Anonymized_Manuscript.docx",
     "submission/medical-hypotheses/package/02_Title_Page.docx",
     "submission/medical-hypotheses/package/03_Cover_Letter.docx",
+    "submission/medical-hypotheses/package/04_Highlights.docx",
+    "submission/medical-hypotheses/package/05_CRediT_Author_Statement.docx",
+    "submission/medical-hypotheses/package/06_Declaration_of_Interest.docx",
+    "submission/medical-hypotheses/package/07_Ethics_Statement.docx",
     "submission/medical-hypotheses/package/SHA256SUMS.txt",
     "figures/fig1-framework.svg",
     "figures/fig1-framework.pdf",
@@ -102,6 +110,26 @@ RESERVE_PRIOR_ART_DOIS = (
     "10.1007/s12311-019-01091-9",
     "10.1007/s12311-018-0925-6",
 )
+CURRENT_WORD_OUTPUTS = (
+    "01_Anonymized_Manuscript.docx",
+    "02_Title_Page.docx",
+    "03_Cover_Letter.docx",
+    "04_Highlights.docx",
+    "05_CRediT_Author_Statement.docx",
+    "06_Declaration_of_Interest.docx",
+    "07_Ethics_Statement.docx",
+)
+ANONYMOUS_IDENTITY_MARKERS = (
+    "Jieyang Chen",
+    "278404704@qq.com",
+    "0009-0001-9247-2085",
+    "Independent Researcher, Hangzhou, China",
+    "jieyangxchen",
+)
+CORE_NAMESPACES = {
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "cp": "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+}
 
 
 def _text_files(root: Path):
@@ -338,6 +366,136 @@ def find_current_submission_readiness_errors(root: Path) -> list[str]:
         errors.append(
             "manuscript/references.bib: missing cerebellar-reserve prior art"
         )
+    for required_heading in (
+        "### Ethics statement",
+        "### CRediT author statement",
+        "### Declaration of interest",
+    ):
+        if required_heading not in manuscript:
+            errors.append(
+                f"manuscript/manuscript.md: missing submission statement: {required_heading[4:]}"
+            )
+    return errors
+
+
+def _docx_xml_text(path: Path) -> str:
+    with zipfile.ZipFile(path, "r") as archive:
+        return "\n".join(
+            archive.read(name).decode("utf-8", errors="ignore")
+            for name in archive.namelist()
+            if name.endswith(".xml")
+        )
+
+
+def _docx_visible_text(path: Path) -> str:
+    with zipfile.ZipFile(path, "r") as archive:
+        document = ElementTree.fromstring(archive.read("word/document.xml"))
+    return " ".join(text.strip() for text in document.itertext() if text.strip())
+
+
+def _docx_metadata_errors(path: Path) -> list[str]:
+    errors: list[str] = []
+    with zipfile.ZipFile(path, "r") as archive:
+        names = set(archive.namelist())
+        if "docProps/custom.xml" in names:
+            errors.append(f"{path.name}: custom Word properties were not removed")
+        if "docProps/core.xml" in names:
+            root = ElementTree.fromstring(archive.read("docProps/core.xml"))
+            creator = root.find("dc:creator", CORE_NAMESPACES)
+            modifier = root.find("cp:lastModifiedBy", CORE_NAMESPACES)
+            if creator is not None and (creator.text or "").strip():
+                errors.append(f"{path.name}: Word creator metadata is not blank")
+            if modifier is not None and (modifier.text or "").strip():
+                errors.append(f"{path.name}: Word last-modified-by metadata is not blank")
+        story_parts = (
+            name
+            for name in names
+            if name == "word/document.xml"
+            or re.fullmatch(r"word/(?:header|footer)\d+\.xml", name)
+            or name in {"word/footnotes.xml", "word/endnotes.xml"}
+        )
+        for part in story_parts:
+            if re.search(rb"\brsid[A-Za-z]*=", archive.read(part)):
+                errors.append(f"{path.name}: revision-session metadata remains in {part}")
+    return errors
+
+
+def find_double_blind_submission_errors(root: Path) -> list[str]:
+    """Check the file-level anonymity and component constraints of the current package."""
+
+    errors: list[str] = []
+    submission = root / "submission" / "medical-hypotheses"
+    package = submission / "package"
+    anonymous = package / CURRENT_WORD_OUTPUTS[0]
+    legacy_main = package / "01_Main_Manuscript.docx"
+    if legacy_main.exists():
+        errors.append("medical-hypotheses package: legacy author-identifying main file remains")
+
+    highlights_path = submission / "highlights.txt"
+    highlights: tuple[str, ...] = ()
+    if highlights_path.is_file():
+        highlights = tuple(
+            line[2:].strip()
+            for line in highlights_path.read_text(encoding="utf-8").splitlines()
+            if line.startswith("- ")
+        )
+        if not 3 <= len(highlights) <= 5:
+            errors.append("submission/medical-hypotheses/highlights.txt: expected 3 to 5 Highlights")
+        for index, item in enumerate(highlights, start=1):
+            if len(item) > 85:
+                errors.append(
+                    "submission/medical-hypotheses/highlights.txt: "
+                    f"Highlight {index} exceeds 85 characters ({len(item)})"
+                )
+
+    for filename in CURRENT_WORD_OUTPUTS:
+        path = package / filename
+        if path.is_file():
+            errors.extend(_docx_metadata_errors(path))
+
+    if anonymous.is_file():
+        xml_text = _docx_xml_text(anonymous).casefold()
+        for marker in ANONYMOUS_IDENTITY_MARKERS:
+            if marker.casefold() in xml_text:
+                errors.append(
+                    f"{anonymous.name}: author-identifying marker remains: {marker}"
+                )
+        visible = _docx_visible_text(anonymous)
+        for forbidden_heading in ("CRediT author statement", "Acknowledgements"):
+            if forbidden_heading in visible:
+                errors.append(
+                    f"{anonymous.name}: reviewer manuscript includes {forbidden_heading}"
+                )
+
+    expected_text = {
+        "04_Highlights.docx": highlights,
+        "05_CRediT_Author_Statement.docx": ("Jieyang Chen: Conceptualization",),
+        "06_Declaration_of_Interest.docx": ("Declarations of interest: none.",),
+        "07_Ethics_Statement.docx": ("Ethics approval and informed consent were not required",),
+    }
+    for filename, markers in expected_text.items():
+        path = package / filename
+        if path.is_file():
+            visible = _docx_visible_text(path)
+            for marker in markers:
+                if marker not in visible:
+                    errors.append(f"{filename}: missing expected text: {marker}")
+
+    manifest = package / "SHA256SUMS.txt"
+    if manifest.is_file():
+        recorded: dict[str, str] = {}
+        for line in manifest.read_text(encoding="utf-8").splitlines():
+            if "  " in line:
+                digest, filename = line.split("  ", maxsplit=1)
+                recorded[filename] = digest
+        if set(recorded) != set(CURRENT_WORD_OUTPUTS):
+            errors.append("SHA256SUMS.txt: file list does not match current Word package")
+        for filename in CURRENT_WORD_OUTPUTS:
+            path = package / filename
+            if path.is_file() and filename in recorded:
+                actual = hashlib.sha256(path.read_bytes()).hexdigest()
+                if recorded[filename] != actual:
+                    errors.append(f"SHA256SUMS.txt: checksum mismatch for {filename}")
     return errors
 
 
@@ -369,6 +527,7 @@ def validate_repository(root: Path) -> list[str]:
         *find_legacy_math_delimiters(root),
         *find_evidence_matrix_errors(root),
         *find_current_submission_readiness_errors(root),
+        *find_double_blind_submission_errors(root),
         *find_stale_generated_files(root),
         *find_unsafe_claims(root),
     ]

@@ -2,6 +2,15 @@
 
 All notable public manuscript-package changes are recorded here. Versions describe repository research artifacts, not journal publication status.
 
+## 0.3.1 — 1 September 2026
+
+- Replaced the author-identifying main Word file with a double-anonymized reviewer manuscript while preserving the public author-version Markdown source.
+- Removed names, affiliation, email, ORCID, direct repository URL, acknowledgements, and named CRediT attribution from the reviewer manuscript.
+- Scrubbed creator, last-modified-by, custom-property, and revision-session metadata from every Word file in the current package.
+- Added separate Highlights, CRediT author statement, Declaration of Interest, and Ethics statement Word files.
+- Added deterministic anonymity, metadata, Highlights-length, package-manifest, and legacy-file exclusion checks.
+- Preserved the 19 August 2026 evidence cut-off and made no new claim of real-world validation.
+
 ## 0.3.0 — 31 August 2026
 
 - Recorded that *The Cerebellum* declined version 0.2.3 at editorial assessment because it remained speculative and invited a new version after real-world validation; that submission is closed.
