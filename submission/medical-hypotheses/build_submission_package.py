@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import importlib.util
 import re
+import shutil
 import tempfile
 import zipfile
 from datetime import datetime, timezone
@@ -46,6 +47,11 @@ EVIDENCE_CUTOFF = "19 August 2026"
 FIXED_TIME = datetime(2026, 9, 1, 0, 0, 0, tzinfo=timezone.utc)
 
 HIGHLIGHTS_SOURCE = Path(__file__).resolve().parent / "highlights.txt"
+DOCI_SOURCE = (
+    Path(__file__).resolve().parent
+    / "source-forms"
+    / "Elsevier_DOCI_Declaration.docx"
+)
 LEGACY_MAIN_DOCX = PACKAGE_DIR / "01_Main_Manuscript.docx"
 MAIN_DOCX = PACKAGE_DIR / "01_Anonymized_Manuscript.docx"
 TITLE_DOCX = PACKAGE_DIR / "02_Title_Page.docx"
@@ -404,18 +410,20 @@ def _scrub_word_metadata(destination: Path) -> None:
 def build_all() -> tuple[Path, ...]:
     _configure_shared_globals()
     LEGACY_MAIN_DOCX.unlink(missing_ok=True)
+    if not DOCI_SOURCE.is_file():
+        raise FileNotFoundError(f"Missing Elsevier DOCI source form: {DOCI_SOURCE}")
     builders = (
         (build_main_manuscript, MAIN_DOCX),
         (build_title_page, TITLE_DOCX),
         (build_cover_letter, COVER_DOCX),
         (build_highlights, HIGHLIGHTS_DOCX),
         (build_credit_statement, CREDIT_DOCX),
-        (build_interest_statement, INTEREST_DOCX),
         (build_ethics_statement, ETHICS_DOCX),
     )
     for builder, destination in builders:
         base._deterministic_save(builder(), destination)
         _scrub_word_metadata(destination)
+    shutil.copyfile(DOCI_SOURCE, INTEREST_DOCX)
     base._write_hashes(OUTPUTS)
     return OUTPUTS
 

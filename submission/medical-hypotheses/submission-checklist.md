@@ -17,13 +17,13 @@
 ## Manuscript package
 
 - [x] The reviewer manuscript contains no author name, affiliation, correspondence, ORCID, acknowledgements, named CRediT attribution, or direct author-identifying repository URL.
-- [x] Creator, last-modified-by, custom-property, and revision-session metadata are removed from every current Word file.
+- [x] Creator, last-modified-by, custom-property, and revision-session metadata are removed from the six repository-generated Word files; the publisher-generated DOCI form is preserved byte-for-byte and has blank creator and last-modified-by core properties.
 - [x] Abstract is 250 words or fewer.
 - [x] Six keywords are supplied.
 - [x] All 26 numbered references are cited, and every numbered citation has a reference.
 - [x] Fig. 1, Fig. 2, and Fig. 3 are cited immediately before their placement and have complete legends.
 - [x] Four separate Highlights are supplied, each no longer than 85 characters.
-- [x] CRediT, Declaration of Interest, and Ethics statements are supplied as separate editable files and repeated where appropriate on the title page or public author version.
+- [x] CRediT and Ethics statements are supplied as separate editable files, and the Declaration of Interest upload is the completed Elsevier DOCI form with the no-competing-interests option selected.
 - [x] Funding, Declaration of Interest, CRediT, acknowledgements, ethics, and data/code statements are present in the correct reviewer or non-reviewer layer.
 - [x] The Elsevier-style generative-AI declaration appears immediately before the references.
 - [x] The public GitHub preprint is disclosed in the title page and cover letter.
@@ -37,6 +37,7 @@
 - [ ] Select the standard/subscription publication route; verify that the displayed mandatory author charge is zero before final confirmation.
 - [ ] Disclose the public preprint/repository wherever the portal asks about prior dissemination.
 - [ ] Copy the AI declaration exactly if the portal provides a separate AI-use field.
+- [ ] Confirm in the portal that the completed Elsevier DOCI form replaces the earlier free-text declaration upload.
 - [ ] Supply only reviewers the author can identify without conflicts; do not invent reviewer details.
 - [ ] Preview the publisher-generated submission PDF and verify all equations, symbols, figures, captions, and references.
 - [ ] Save the final submission confirmation, manuscript ID, and downloaded portal files before updating GitHub status.

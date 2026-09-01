@@ -21,8 +21,8 @@ The English manuscript received five focused passes for argument order, paragrap
 
 ## Package decision
 
-The upload package contains a scrubbed, anonymous reviewer manuscript plus separate title page, cover letter, Highlights, CRediT author statement, Declaration of Interest, and Ethics statement files. The longer cohort, statistical-analysis, and early-intervention documents remain linked in the public repository so that readers can inspect the executable research plan without presenting it as completed real-world validation.
+The upload package contains a scrubbed, anonymous reviewer manuscript plus separate title page, cover letter, Highlights, CRediT author statement, completed Elsevier DOCI form, and Ethics statement files. The longer cohort, statistical-analysis, and early-intervention documents remain linked in the public repository so that readers can inspect the executable research plan without presenting it as completed real-world validation.
 
 ## Double-anonymized review boundary
 
-The reviewer manuscript removes direct author identifiers, the direct repository URL, acknowledgements, and named contributor attribution. All current Word files have personal metadata and revision-session identifiers scrubbed. Because the public preprint can be found by searching the exact manuscript title, this package cannot guarantee reviewer anonymity; it implements the file-level separation required for double-anonymized review and discloses the public preprint to the editorial office.
+The reviewer manuscript removes direct author identifiers, the direct repository URL, acknowledgements, and named contributor attribution. The six repository-generated Word files have personal metadata and revision-session identifiers scrubbed. The publisher-generated DOCI form is retained byte-for-byte and has blank creator and last-modified-by core properties. Because the public preprint can be found by searching the exact manuscript title, this package cannot guarantee reviewer anonymity; it implements the file-level separation required for double-anonymized review and discloses the public preprint to the editorial office.

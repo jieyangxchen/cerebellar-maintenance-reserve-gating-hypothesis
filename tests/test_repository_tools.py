@@ -296,6 +296,10 @@ class RepositoryValidationTests(unittest.TestCase):
                 "missing required file: submission/medical-hypotheses/package/01_Anonymized_Manuscript.docx",
                 errors,
             )
+            self.assertIn(
+                "missing required file: submission/medical-hypotheses/source-forms/Elsevier_DOCI_Declaration.docx",
+                errors,
+            )
 
     def test_current_submission_readiness_flags_format_and_prior_art_failures(self) -> None:
         checker = getattr(
@@ -334,6 +338,31 @@ class RepositoryValidationTests(unittest.TestCase):
     def test_current_double_blind_submission_package_passes(self) -> None:
         root = Path(__file__).resolve().parents[1]
         self.assertEqual(find_double_blind_submission_errors(root), [])
+
+    def test_current_interest_file_uses_elsevier_doci_wording(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        source = (
+            root
+            / "submission"
+            / "medical-hypotheses"
+            / "source-forms"
+            / "Elsevier_DOCI_Declaration.docx"
+        )
+        path = (
+            root
+            / "submission"
+            / "medical-hypotheses"
+            / "package"
+            / "06_Declaration_of_Interest.docx"
+        )
+        self.assertEqual(source.read_bytes(), path.read_bytes())
+        visible = repository_validation._docx_visible_text(path)
+        self.assertIn(
+            "The authors declare that they have no known competing financial interests "
+            "or personal relationships that could have appeared to influence the work "
+            "reported in this paper.",
+            visible,
+        )
 
     def test_double_blind_checker_flags_identity_and_overlong_highlight(self) -> None:
         current_root = Path(__file__).resolve().parents[1]

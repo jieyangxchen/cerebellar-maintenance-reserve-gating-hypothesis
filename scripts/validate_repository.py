@@ -52,6 +52,7 @@ REQUIRED_FILES = (
     "submission/medical-hypotheses/submission-checklist.md",
     "submission/medical-hypotheses/submission-readiness.md",
     "submission/medical-hypotheses/highlights.txt",
+    "submission/medical-hypotheses/source-forms/Elsevier_DOCI_Declaration.docx",
     "submission/medical-hypotheses/package/README.md",
     "submission/medical-hypotheses/package/01_Anonymized_Manuscript.docx",
     "submission/medical-hypotheses/package/02_Title_Page.docx",
@@ -393,11 +394,15 @@ def _docx_visible_text(path: Path) -> str:
     return " ".join(text.strip() for text in document.itertext() if text.strip())
 
 
-def _docx_metadata_errors(path: Path) -> list[str]:
+def _docx_metadata_errors(
+    path: Path,
+    *,
+    allow_publisher_template_parts: bool = False,
+) -> list[str]:
     errors: list[str] = []
     with zipfile.ZipFile(path, "r") as archive:
         names = set(archive.namelist())
-        if "docProps/custom.xml" in names:
+        if "docProps/custom.xml" in names and not allow_publisher_template_parts:
             errors.append(f"{path.name}: custom Word properties were not removed")
         if "docProps/core.xml" in names:
             root = ElementTree.fromstring(archive.read("docProps/core.xml"))
@@ -407,16 +412,17 @@ def _docx_metadata_errors(path: Path) -> list[str]:
                 errors.append(f"{path.name}: Word creator metadata is not blank")
             if modifier is not None and (modifier.text or "").strip():
                 errors.append(f"{path.name}: Word last-modified-by metadata is not blank")
-        story_parts = (
-            name
-            for name in names
-            if name == "word/document.xml"
-            or re.fullmatch(r"word/(?:header|footer)\d+\.xml", name)
-            or name in {"word/footnotes.xml", "word/endnotes.xml"}
-        )
-        for part in story_parts:
-            if re.search(rb"\brsid[A-Za-z]*=", archive.read(part)):
-                errors.append(f"{path.name}: revision-session metadata remains in {part}")
+        if not allow_publisher_template_parts:
+            story_parts = (
+                name
+                for name in names
+                if name == "word/document.xml"
+                or re.fullmatch(r"word/(?:header|footer)\d+\.xml", name)
+                or name in {"word/footnotes.xml", "word/endnotes.xml"}
+            )
+            for part in story_parts:
+                if re.search(rb"\brsid[A-Za-z]*=", archive.read(part)):
+                    errors.append(f"{path.name}: revision-session metadata remains in {part}")
     return errors
 
 
@@ -427,6 +433,8 @@ def find_double_blind_submission_errors(root: Path) -> list[str]:
     submission = root / "submission" / "medical-hypotheses"
     package = submission / "package"
     anonymous = package / CURRENT_WORD_OUTPUTS[0]
+    doci_source = submission / "source-forms" / "Elsevier_DOCI_Declaration.docx"
+    doci_output = package / "06_Declaration_of_Interest.docx"
     legacy_main = package / "01_Main_Manuscript.docx"
     if legacy_main.exists():
         errors.append("medical-hypotheses package: legacy author-identifying main file remains")
@@ -451,7 +459,21 @@ def find_double_blind_submission_errors(root: Path) -> list[str]:
     for filename in CURRENT_WORD_OUTPUTS:
         path = package / filename
         if path.is_file():
-            errors.extend(_docx_metadata_errors(path))
+            errors.extend(
+                _docx_metadata_errors(
+                    path,
+                    allow_publisher_template_parts=(
+                        filename == "06_Declaration_of_Interest.docx"
+                    ),
+                )
+            )
+
+    if doci_source.is_file() and doci_output.is_file():
+        if doci_source.read_bytes() != doci_output.read_bytes():
+            errors.append(
+                "06_Declaration_of_Interest.docx: does not exactly match the "
+                "publisher-generated Elsevier DOCI source form"
+            )
 
     if anonymous.is_file():
         xml_text = _docx_xml_text(anonymous).casefold()
@@ -470,7 +492,11 @@ def find_double_blind_submission_errors(root: Path) -> list[str]:
     expected_text = {
         "04_Highlights.docx": highlights,
         "05_CRediT_Author_Statement.docx": ("Jieyang Chen: Conceptualization",),
-        "06_Declaration_of_Interest.docx": ("Declarations of interest: none.",),
+        "06_Declaration_of_Interest.docx": (
+            "The authors declare that they have no known competing financial interests "
+            "or personal relationships that could have appeared to influence the work "
+            "reported in this paper.",
+        ),
         "07_Ethics_Statement.docx": ("Ethics approval and informed consent were not required",),
     }
     for filename, markers in expected_text.items():
