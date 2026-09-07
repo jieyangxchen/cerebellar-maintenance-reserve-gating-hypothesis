@@ -2,6 +2,15 @@
 
 All notable public manuscript-package changes are recorded here. Versions describe repository research artifacts, not journal publication status.
 
+## Research pause and archive notice — 7 September 2026
+
+- Corrected the outdated homepage statement that the Medical Hypotheses manuscript had not yet been submitted: it was submitted on 1 September 2026 and rejected on 4 September 2026. Both journal submissions are closed, with no peer-reviewed publication resulting from either submission.
+- Recorded the author's decision to pause research, development, and further submission work and retain the repository as a public research archive.
+- Added a research-status note distinguishing unvalidated hypotheses, related prior art, and an additional contribution that has not yet been established; the pause is not presented as empirical disproof or a retraction of a published paper.
+- Removed active target/submission-candidate badges and marked historical planning and readiness records as archival context.
+- Preserved all manuscripts, Word submission files, figures, analyses, protocols, citation metadata, licenses, existing tag targets, and Release assets. This is a documentation-only status update, not a new scientific or journal-submission release.
+- Earlier entries and Release descriptions remain dated historical records; the current status is given in [the closure note](docs/research-status-2026-09-07.md).
+
 ## 0.3.1 — 1 September 2026
 
 - Replaced the author-identifying main Word file with a double-anonymized reviewer manuscript while preserving the public author-version Markdown source.

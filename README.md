@@ -1,12 +1,16 @@
 # Maintenance–Reserve–Gating Hypothesis of Hereditary Cerebellar Ataxia
 
-[![Status: hypothesis and protocol](https://img.shields.io/badge/status-hypothesis%20%2B%20protocol-B96B25)](#scientific-status)
+[![Status: research paused](https://img.shields.io/badge/status-research%20paused-6B7280)](docs/research-status-2026-09-07.md)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-287D61)](LICENSE)
-[![Target: Medical Hypotheses](https://img.shields.io/badge/target-Medical%20Hypotheses-6A4C93)](submission/medical-hypotheses/submission-checklist.md)
-[![Submission: v0.3.1 candidate](https://img.shields.io/badge/submission-v0.3.1%20candidate-2F5D8A)](submission/medical-hypotheses/submission-readiness.md)
 [![Evidence cut-off](https://img.shields.io/badge/evidence%20cut--off-2026--08--19-2F5D8A)](evidence/evidence-audit.md)
 
-A public, submission-oriented hypothesis package for testing whether modifier effects in hereditary cerebellar ataxia can include a mismatch between genetic demand, externally conditioned system activation, and finite homeostatic reserve. *The Cerebellum* declined version 0.2.3 at editorial assessment because the manuscript remained speculative and invited a new submission after real-world validation. That submission is closed. Version 0.3.1 is a separately tailored, double-anonymized public submission candidate for *Medical Hypotheses*; it has not yet been submitted to the journal or tagged as a journal-submission release.
+> **Research paused on 7 September 2026.** This repository is retained as a public research archive of an **unvalidated hypothesis and protocol concepts**, not a peer-reviewed publication or a validated mechanism. Both journal submissions are closed; no further submission or active development is planned at present. See the [research status and closure note](docs/research-status-2026-09-07.md).
+
+The archived package explores whether modifier effects in hereditary cerebellar ataxia could include a mismatch between genetic demand, externally conditioned system activation, and finite homeostatic reserve. *The Cerebellum* declined the initial submission because it remained speculative and requested real-world validation before a new submission. The separately tailored manuscript was submitted to *Medical Hypotheses* on **1 September 2026** and rejected on **4 September 2026**. Neither submission resulted in a peer-reviewed publication.
+
+A subsequent targeted originality assessment identified relevant prior work on pressure–protection balance and residual-based proteostasis-response measures. A sufficiently distinct additional scientific contribution has **not been established**. This is not a claim that every possible extension has already been studied, or that the proposed mechanism has been empirically disproved.
+
+The manuscripts, figures, planning protocols, submission-package notes, and existing Releases below are preserved as dated historical materials. Their original candidate/readiness wording is not the current project status. This notice and the closure note supersede those administrative descriptions without rewriting the archived scientific artifacts.
 
 The central discipline of this repository is simple: **the derived exposure score $S$ is not the unknown biological input $X$; $X$, the gate, outward loss, reserve state, and hump-shaped human risk curve are hypotheses—not discoveries.** The package turns them into prespecified predictions that can fail, while keeping clinical intervention focused on known, measurable biology.
 
@@ -17,9 +21,10 @@ The central discipline of this repository is simple: **the derived exposure scor
 - [Statistical analysis plan](protocols/statistical-analysis-plan.md)
 - [Evidence audit](evidence/evidence-audit.md)
 - [Evidence matrix](evidence/evidence-matrix.tsv)
-- [Medical Hypotheses submission checklist](submission/medical-hypotheses/submission-checklist.md)
-- [Version 0.3.1 readiness record](submission/medical-hypotheses/submission-readiness.md)
-- [Presubmission inquiry and response status](submission/the-cerebellum/presubmission-inquiry.md)
+- [Research status and closure note — 7 September 2026](docs/research-status-2026-09-07.md)
+- [Historical Medical Hypotheses submission checklist](submission/medical-hypotheses/submission-checklist.md)
+- [Historical version 0.3.1 readiness record](submission/medical-hypotheses/submission-readiness.md)
+- [Historical presubmission inquiry and response status](submission/the-cerebellum/presubmission-inquiry.md)
 - [Archived The Cerebellum submission checklist](submission/the-cerebellum/submission-checklist.md)
 
 ## The three figures
@@ -55,7 +60,9 @@ This is a research hypothesis and protocol concept, not a peer-reviewed mechanis
 
 The [claim-level audit](evidence/evidence-audit.md) documents the model system, population, limitation, DOI or primary source, and corrected wording for every major statement.
 
-## Prospective programme at a glance
+## Historical prospective programme at a glance
+
+The following is the original planning concept, retained for provenance. It is not an active or registered study and is not being implemented through this archived project.
 
 The observational core is a five-year, multicentre, family-aware SCA3/SCA6 cohort. SCA3 is the primary test bed; SCA6 is a transport and heterogeneity test, not automatic pooled confirmation. Phenoconversion is analysed with age as the time scale, delayed entry, interval censoring, and family/site structure. One measured exposure operationalization $E^*$ is selected from a finite two-candidate shortlist by a registered outcome-blind rubric; its derived score $S^*=h(E^*;\theta)$, lag, spatial rule, spline knots, and missing-data rules are then frozen before outcome analysis. The pesticide and untreated-well candidates are rural-environment proxies, not maintenance resources or direct measurements of $X$. Even a replicated hump and genotype interaction would support only a non-linear environmental association, not a gate or leak. Residual age at onset is descriptive, not the primary estimand.
 
@@ -111,7 +118,7 @@ submission/   presubmission inquiry and journal-specific completion checklist
 
 ## Contact
 
-For scholarly collaboration, corrections, media enquiries, or commercial-licensing requests, email [278404704@qq.com](mailto:278404704@qq.com). Please use public Issues only for non-sensitive questions and corrections; do not post participant-level, genetic, address, or medical information.
+For material corrections or licensing enquiries, email [278404704@qq.com](mailto:278404704@qq.com). While the repository is archived, new Issues and pull requests are not accepted. Keep correspondence non-sensitive; do not send participant-level, genetic, address, or medical information.
 
 ## Safety and ethics
 
@@ -121,12 +128,12 @@ Residential histories and genetic-carrier data are sensitive. Any real cohort mu
 
 ## Versioning, citation, and license
 
-The scientific evidence cut-off for version 0.3.1 remains **19 August 2026**. Version 0.3.1 adds double-anonymized submission files and journal-facing statements without claiming new real-world validation. The immutable `v0.2.3` and `v0.2.3-tc1` tags preserve the initial *The Cerebellum* submission and technical-check correction. Current trial status is timestamped rather than assumed to remain current. Version history is recorded in [CHANGELOG.md](CHANGELOG.md).
+The scientific evidence cut-off for the preserved version 0.3.1 manuscript remains **19 August 2026**. That version added double-anonymized submission files and journal-facing statements without claiming new real-world validation. The separate **7 September 2026 closure note** records later administrative outcomes and the follow-up originality assessment; it does not revise the archived manuscript or its evidence cut-off. The immutable `v0.2.3` and `v0.2.3-tc1` tags preserve the initial *The Cerebellum* submission and technical-check correction. Trial-status statements and Release descriptions are historical snapshots, not current endorsements or submission status. Version history is recorded in [CHANGELOG.md](CHANGELOG.md).
 
 Please cite using [CITATION.cff](CITATION.cff). Text, protocols, original figures, and code are released under [CC BY-NC 4.0](LICENSE): personal use and non-commercial research, teaching, sharing, and adaptation are permitted with attribution; commercial use requires separate permission from the copyright holder. Third-party papers and linked materials retain their original copyright.
 
 Because the NonCommercial condition restricts fields of use, this is a **public, non-commercially licensed/source-available repository**, not “open source” under the Open Source Initiative definition.
 
-## Contributing
+## Archive and corrections
 
-Corrections are welcome when they include a primary-source link and identify the exact claim affected. Proposed model changes should state in advance what observation would make them fail. Do not open an issue containing participant-level, genetic, address, medical, or other sensitive data.
+Active development and submission work are paused. GitHub archival makes the repository read-only; it does not erase its history and can be reversed if substantive new evidence justifies reopening the work. The contact address above remains available for a material correction, preferably with a primary-source link and the exact claim affected. No response or further development is promised. Do not send participant-level, genetic, address, medical, or other sensitive data.
